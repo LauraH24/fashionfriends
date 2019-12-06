@@ -1,6 +1,6 @@
 <html>
 	<head>
-		<title>FashionFriends</title>
+		<title>FashionFriendss</title>
 		<meta charset ='utf-8'>
 	</head>
 	<body>
