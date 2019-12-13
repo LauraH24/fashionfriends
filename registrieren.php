@@ -16,15 +16,22 @@
 				echo "Passwort wiederholen: <input type='password' name='passwied'></br>";
 				echo "<input type='submit' name='senden' value='Senden'>";
 				echo "<input type='reset' name='loeschen' value='Löschen'>";
+				echo "</form>";
+				echo "<form action='upload.php' method='POST' enctype='multipart/form-data'>";
+				echo "<input type='file' name='profilbild'>";
+				echo "</form>";
+				
 			}
 			else
 			{
+				$id = date('Y-m-d, H:i:s');
 				$vorname = $_POST['vorname'];
 				$nachname = $_POST['nachname'];
 				$benutzername = $_POST['benutzername'];
 				$email = $_POST['email'];
 				$pass = $_POST['pass'];
 				$passwied = $_POST['passwied'];
+				$profilbild = $_POST['profilbild'];
 				
 				if($pass != $passwied)
 				{
@@ -40,6 +47,10 @@
 				echo "Dieser Benutzername existiert bereits. Bitte wähle einen anderen Benutzernamen aus.</br>";
 				echo "<a href='registrieren.php'>Erneut versuchen</a>";
 			}
+			$insert = "INSERT INTO ffbenutzer VALUES ('$id','$vorname','$nachname','$benutzername','$email','$pass','$profilbild')";
+			$inres = mysql_query($db, $insert);
+			$innum = mysql_query($inres);
+			
 			mysql_close($db);
 			}
 		?>
