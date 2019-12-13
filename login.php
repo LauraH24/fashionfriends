@@ -1,8 +1,8 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<link href="gaestebuch.css" rel="stylesheet">
-		<title> Gästebucheinträge </title>
+		<link href=".css" rel="stylesheet">
+		<title> Fashionfriends Login </title>
 	</head>
 	<body>
 
