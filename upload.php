@@ -1,3 +1,3 @@
 <?php
-	move_upload_file($_FILES['bild']['tmp_name'], 'upload/'.$_FILES['bild']['tmp_name']);
+	move_uploaded_file($_FILES['profilbild']['tmp_name'], 'upload/'.$_FILES['profilbild']['tmp_name']);
 ?>
