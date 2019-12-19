@@ -22,6 +22,7 @@
 			}
 			else
 			{
+				$target = "images/".basename($_FILES['profilbild']['name']);
 				$db = mysqli_connect('localhost','root','','bbs');
 				
 				$vorname = $_POST['vorname'];
@@ -30,14 +31,8 @@
 				$email = $_POST['email'];
 				$pass = $_POST['pass'];
 				$passwied = $_POST['passwied'];
-				$name = $_FILES['profilbild']['name'];
-				$type = $_FILES['profilbild']['type'];
-				$profilbild = file_get_contents($_FILES['profilbild']['tmp_name']);
-				$stmt = $db->prepare("insert into ffbenutzer values('',?,?,?)");
-				$stmt->bindParam(1,$name);
-				$stmt->bindParam(2,$type);
-				$stmt->bindParam(3,$profilbild);
-				$stmt->execute();
+				$profilbild = $_FILES['profilbild']['name'];
+				
 				
 				if($pass != $passwied)
 				{
@@ -55,6 +50,8 @@
 			$insert = "INSERT INTO ffbenutzer VALUES ('$vorname','$nachname','$benutzername','$email','$pass','$profilbild')";
 			$inres = mysqli_query($db, $insert);
 			$innum = mysqli_query($inres);
+			
+			move_uploaded_file($_FILES['profilbild']['tmp_name'], $target);
 			
 			mysqli_close($db);
 			}
