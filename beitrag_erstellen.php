@@ -10,8 +10,7 @@
 		<?php
 			$db = mysqli_connect("localhost","root","","bbs");
 			
-  // Initialize message variable
-  $msg = "";
+
 
   // If upload button is clicked ...
   if (isset($_POST['upload'])) {
@@ -44,7 +43,7 @@
       echo "</div>";
     }
   ?>
-  <form method="POST" action="upload2.php" enctype="multipart/form-data">
+  <form method="POST" action="beitrag_erstellen.php" enctype="multipart/form-data">
   	<input type="hidden" name="size" value="1000000">
   	<div>
   	  <input type="file" name="image">
@@ -55,7 +54,7 @@
       	cols="40" 
       	rows="4" 
       	name="image_text" 
-      	placeholder="Say something about this image..."></textarea>
+      	placeholder="Bildbeschreibung hinzufügen"></textarea>
   	</div>
   	<div>
   		<button type="submit" name="upload">Upload</button>

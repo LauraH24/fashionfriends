@@ -1,3 +1,4 @@
--Dezember 2019: Erstellen und Einrichten von GitHub.
--Dezember-Januar 2019/2020 (EDV Stunden): Arbeiten am Bildupload.
--15.1.2020: Bildupload fertiggestellt.
+-Dezember 2019: Erstellen und Einrichten von GitHub. (90 min)
+-Dezember-Januar 2019/2020 (EDV Stunden): Arbeiten am Bildupload. (jeweils 90 min)
+-15.1.2020: Bildupload fertiggestellt. (90 min)
+-22.01.20: Arbeiten an Registrieren und Style. (90min)
