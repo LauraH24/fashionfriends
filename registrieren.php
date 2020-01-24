@@ -6,10 +6,10 @@
 		<link rel="shortcut icon" type="image/x-icon" href="logo_neu.png">
 	</head>
 	<body>
-	<h1>Anmelden bei FashionFriends</h1>
 		<?php
 			if(!isset($_POST['senden']))
 			{
+				echo "<h1>Anmelden bei FashionFriends</h1>";
 				echo "<table>";
 				echo "<td><form method='POST' action='' enctype='multipart/form-data'></td>";
 				echo "<tr>";
@@ -55,33 +55,16 @@
 				$pass = $_POST['pass'];
 				$passwied = $_POST['passwied'];
 				$image = $_FILES['image']['name'];
-				
+				echo"image = $image";
 				$target = "profiles/".basename($image);
 
 				$sql = "INSERT INTO ffbenutzer VALUES ('', '$vorname', '$nachname', '$benutzername', '$email', '$pass', '$image')";
 				
 				mysqli_query($db, $sql);
   
-				
-				if($pass != $passwied)
-				{
-					echo "Die Passwörter stimmen nicht überein! Bitte versuche es erneut. </br>";
-					echo "<a href='registrieren.php'>Erneut versuchen</a>";
-				}
-				$sql = "SELECT benutzername FROM ffbenutzer WHERE benutzername=$benutzername";
-				$res = mysqli_query($db, $sql);
-				$num = mysqli_num_rows($res);
-				if ($num == 1)
-				{
-					echo "Dieser Benutzername existiert bereits. Bitte wähle einen anderen Benutzernamen aus.</br>";
-					echo "<a href='registrieren.php'>Erneut versuchen</a>";
-				}
-
+				$result = mysqli_query($db, "SELECT * FROM ffbenutzer");
 				
 				mysqli_close($db);
-				echo "<img id='imagegross' src='$image'></br></br></br>";
-				echo "<h1>Willkommen bei FashionFriends, $vorname!</h1></br></br>";
-				echo "<a href=''>Trends entdecken</a>";
 			}
 		?>
 	</body>
