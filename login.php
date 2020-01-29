@@ -11,6 +11,7 @@
 		<a href="start.php">Zurück zur Startseite</a></br></br>
 
 		<?php
+		session_start();
 
 			if(!isset($_POST['senden']))
 			{
@@ -55,6 +56,7 @@
 				echo "<h1>Passwort oder E-Mail ist falsch!</h1></br>";
 				echo "<a href='login.php'>Erneut versuchen</a>";
 			}
+		session_destroy();
 		?>
 	</body>
 </html>
