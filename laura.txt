@@ -4,3 +4,4 @@
 -22.01.20: Arbeiten an Registrieren und Style. (90min)
 -23.01.20: Arbeiten an Bildupload Registrieren. (90min)
 -24.01.20: Arbeiten an Speichern von Registrieren. (90min)
+-29.01.20: Fehlerbehebung Bildupload Registrieren, Recherche zu PHP-Sessions. (90min)
