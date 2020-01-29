@@ -8,7 +8,7 @@
 
 		<h1> Willkommen bei FashionFriends! Hier kannst du dich einloggen:</h1>
 
-		<a href="./start.php">Zurück zur Startseite</a></br></br>
+		<a href="start.php">Zurück zur Startseite</a></br></br>
 
 		<?php
 
@@ -32,22 +32,20 @@
 			}
 			else{
 				$email = $_POST['email'];
-				$passwort = $_POST['passwort'];
+				$pass = $_POST['passwort'];
 
-				$db = mysqli_connect('','','','');
+				$db = mysqli_connect('localhost','root','','bbs');
 		
-				$sql = "SELECT * FROM  WHERE name = '$email' ";
+				$sql = "SELECT pass FROM ffbenutzer WHERE email = '$email' ";
 				$res = mysqli_query ($db, $sql);
 		
 		
 				while($datensatz = mysqli_fetch_assoc($res))
 				{
 			
-					$email = "$datensatz[email]";
-					$email = $email;
-					$passwort = "$datensatz[passwort]";
+					$pass2 = "$datensatz[pass]";
 				}
-				if($email==$email && $passwort==$passwort)
+				if($pass == $pass2)
 				{
 				echo "<h1>Vielen Dank für deine Anmeldung!</h1></br>";
 				echo "<a href='.php'>Weiter zu deinem Profil</a>";
@@ -55,7 +53,7 @@
 				else
 				{
 				echo "<h1>Passwort oder E-Mail ist falsch!</h1></br>";
-				echo "<a href='login.php'>Nochmal versuchen</a>";
+				echo "<a href='login.php'>Erneut versuchen</a>";
 			}
 		?>
 	</body>
