@@ -55,7 +55,6 @@
 				$pass = $_POST['pass'];
 				$passwied = $_POST['passwied'];
 				$image = $_FILES['image']['name'];
-				echo"image = $image";
 				$target = "profiles/".basename($image);
 
 				$sql = "INSERT INTO ffbenutzer VALUES ('', '$vorname', '$nachname', '$benutzername', '$email', '$pass', '$image')";
@@ -63,8 +62,18 @@
 				mysqli_query($db, $sql);
   
 				$result = mysqli_query($db, "SELECT * FROM ffbenutzer");
-				
-				mysqli_close($db);
+								if($pass != $passwied)
+				{
+					echo "Die Passwörter stimmen nicht überein! Bitte versuche es erneut. </br>";
+					echo "<a href='registrieren.php'>Erneut versuchen</a>";
+				}
+
+			
+			mysqli_close($db);
+			echo "<img src='profiles/$image'></br></br></br>";
+			echo "<h1>Willkommen bei FashionFriends, $vorname!</h1></br></br>";
+			echo "<a href=''>Trends entdecken</a>";
+
 			}
 		?>
 	</body>
