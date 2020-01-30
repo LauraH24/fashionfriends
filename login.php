@@ -2,7 +2,7 @@
 	<head>
 		<meta charset="utf-8">
 		<link href=".css" rel="stylesheet">
-		<title> Fashionfriends Login </title>
+		<title>Login</title>
 	</head>
 	<body>
 
@@ -11,7 +11,6 @@
 		<a href="start.php">Zurück zur Startseite</a></br></br>
 
 		<?php
-		session_start();
 
 			if(!isset($_POST['senden']))
 			{
@@ -32,8 +31,12 @@
 				echo"</form>";
 			}
 			else{
+				session_start();
 				$email = $_POST['email'];
 				$pass = $_POST['passwort'];
+				
+				$_SESSION['email']=$email;
+				$_SESSION['passwort']=$pass;
 
 				$db = mysqli_connect('localhost','root','','bbs');
 		
@@ -55,8 +58,8 @@
 				{
 				echo "<h1>Passwort oder E-Mail ist falsch!</h1></br>";
 				echo "<a href='login.php'>Erneut versuchen</a>";
+				
 			}
-		session_destroy();
 		?>
 	</body>
 </html>
