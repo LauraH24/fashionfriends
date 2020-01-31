@@ -2,7 +2,7 @@
 	<head>
 		<title>FashionFriends</title>
 		<meta charset ='utf-8'>
-		<link href='style_start.css' rel='stylesheet'>
+		<link href='tailwind.css' rel='stylesheet'>
 	</head>
 	<body>
 		<header>

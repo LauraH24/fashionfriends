@@ -4,3 +4,5 @@ Ich hab gemacht:
 -start (html) (2 Schulstunde)
 -CSS Design der ganzen Seite mit Sara, Figma(6 Schulstunden)
 -CSS Dateien mit Hilfe von Figma erstellen (2 Schulstunden+1 Stunde zuhause)
+-Hilfe-Formular erstellen (3 Schulstunde)
+-Mysql Datenbank hosten informieren (1 Schulstunde)

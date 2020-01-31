@@ -1,7 +1,6 @@
 -Zugriff von anderen Rechnern
 -Passwort vergessen
 -Profilbilder ändern
--Hilfeformular
 -FAQ
 -mehrere Links auf Bildern selbst einfügen
 -Impressum-Seite
@@ -10,3 +9,4 @@
 Nochmal kontrollieren:
 -Passwörter verschlüsseln
 -Sessions
+-Hilfeformular
