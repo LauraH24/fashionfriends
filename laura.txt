@@ -6,3 +6,4 @@
 -24.01.20: Arbeiten an Speichern von Registrieren. (90min)
 -29.01.20: Fehlerbehebung Bildupload Registrieren, Recherche zu PHP-Sessions. (90min)
 -30.01.20: Arbeiten an PHP Sessions. (90min)
+-31.01.20: Arbeiten an Sessions, Passwort-Hash, Profil-Aufbau. (90min)
