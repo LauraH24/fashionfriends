@@ -8,6 +8,7 @@
 -Biografie in Profil einfügen & ändern
 -Kommentare und Like-Button
 -allen Bilder quadratische Größe zuordnen
+-Datenbank ffupload mit ffbenutzer verknüpfen
 
 Nochmal kontrollieren:
 -Passwörter verschlüsseln

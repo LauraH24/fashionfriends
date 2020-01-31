@@ -19,6 +19,8 @@
 				$email = $_SESSION['email'];
 				$passwort = $_SESSION['passwort'];
 				
+				$db = mysqli_connect('localhost','root','','bbs');
+				
 				echo "<div id='profilbild'>";
 				echo "<div id='benutzername'>";
 				echo "<div id='bio'>";
