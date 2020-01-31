@@ -46,6 +46,7 @@
 			}
 			else
 			{
+				seesion_start();
 				$db = mysqli_connect('localhost','root','','bbs');
 				
 				$vorname = $_POST['vorname'];
@@ -53,9 +54,17 @@
 				$benutzername = $_POST['benutzername'];
 				$email = $_POST['email'];
 				$pass = $_POST['pass'];
+				$hash = hash('sha256',$pass);
 				$passwied = $_POST['passwied'];
 				$image = $_FILES['image']['name'];
 				$target = "profiles/".basename($image);
+				
+				$_SESSION['vorname']=$vorname;
+				$_SESSION['nachname']=$nachname;
+				$_SESSION['benutzername']=$benutzername;
+				$_SESSION['email']=$email;
+				$_SESSION['pass']=$pass;
+				$_SESSION['image']=$image;
 
 				$sql = "INSERT INTO ffbenutzer VALUES ('', '$vorname', '$nachname', '$benutzername', '$email', '$pass', '$image')";
 				
@@ -70,7 +79,7 @@
 
 			
 			mysqli_close($db);
-			echo "<img src='profiles/$image'></br></br></br>";
+			echo "<img src='$target'></br></br></br>";
 			echo "<h1>Willkommen bei FashionFriends, $vorname!</h1></br></br>";
 			echo "<a href='profile.php'>Trends entdecken</a>";
 
