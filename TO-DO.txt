@@ -1,0 +1,9 @@
+-Zugriff von anderen Rechnern
+-Passwörter in Datenbank verschlüsseln
+-Passwort vergessen
+-Sessions
+-Profilbilder ändern
+-Hilfeformular
+-FAQ
+-mehrere Links auf Bildern selbst einfügen
+-Impressum-Seite
