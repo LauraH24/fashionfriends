@@ -5,6 +5,8 @@
 -FAQ
 -mehrere Links auf Bildern selbst einfügen
 -Impressum-Seite
+-Biografie in Profil einfügen & ändern
+-Kommentare und Like-Button
 
 
 Nochmal kontrollieren:
