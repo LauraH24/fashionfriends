@@ -1,9 +1,12 @@
 -Zugriff von anderen Rechnern
--Passwörter in Datenbank verschlüsseln (nochmal testen)
 -Passwort vergessen
--Sessions
 -Profilbilder ändern
 -Hilfeformular
 -FAQ
 -mehrere Links auf Bildern selbst einfügen
 -Impressum-Seite
+
+
+Nochmal kontrollieren:
+-Passwörter verschlüsseln
+-Sessions
