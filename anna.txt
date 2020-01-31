@@ -1,0 +1,6 @@
+Ich hab gemacht:
+-Kategorien auswählen (html) (1 Schulstunde)
+-login (html) (1 Schulstunde)
+-start (html) (2 Schulstunde)
+-CSS Design der ganzen Seite mit Sara, Figma(6 Schulstunden)
+-CSS Dateien mit Hilfe von Figma erstellen (2 Schulstunden+1 Stunde zuhause)

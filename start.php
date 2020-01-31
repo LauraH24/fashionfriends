@@ -5,9 +5,18 @@
 		<link href='style_start.css' rel='stylesheet'>
 	</head>
 	<body>
-		<h1>Willkommen bei FashionFriends!</h1></br></br>
-		<h3>Neu hier? Registrier dich!</h3></br></br>
-		<a href=''><button type='button' class='button'>Login</button></a>
-		<a href=''><button type='button' class='button'>Registrieren</button></a>
+		<header>
+			<h1>Willkommen bei FashionFriends!</h1></br></br>
+			<img src='logo_neu.png' border='0' titl='logo'/>
+		</header>
+		<div id='login'>
+			<a href='login.php' titel='Login'>Anmelden</a></br>
+		</div>
+		<div id='text'>
+			Du hast kein Konto? </br>
+		</div>
+		<div id='registrieren'>
+			<a href='registrieren.php' titel='Registrieren'>Registrieren</a>
+		</div>
 	</body>
 </html>
