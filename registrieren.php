@@ -72,7 +72,7 @@
 			mysqli_close($db);
 			echo "<img src='profiles/$image'></br></br></br>";
 			echo "<h1>Willkommen bei FashionFriends, $vorname!</h1></br></br>";
-			echo "<a href=''>Trends entdecken</a>";
+			echo "<a href='profile.php'>Trends entdecken</a>";
 
 			}
 		?>
