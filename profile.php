@@ -23,7 +23,14 @@
 				echo "<div id='benutzername'>";
 				echo "<div id='bio'>";
 				echo "<table>";
-				echo "<th></th>";
+				echo "<tr>";
+				echo "<th> </th>";
+				echo "</tr>";
+				echo "<td><img src=''</td>";
+				echo "<td><img src=''</td>";
+				echo "<td><img src=''</td>";
+				echo "</tr>";
+				echo "</table>";
 				
 				echo "<a href='logout.php'>Logout</a>";
 			}

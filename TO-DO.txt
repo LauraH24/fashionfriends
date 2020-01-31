@@ -7,7 +7,7 @@
 -Impressum-Seite
 -Biografie in Profil einfügen & ändern
 -Kommentare und Like-Button
-
+-allen Bilder quadratische Größe zuordnen
 
 Nochmal kontrollieren:
 -Passwörter verschlüsseln
