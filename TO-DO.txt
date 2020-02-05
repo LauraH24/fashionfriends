@@ -1,5 +1,4 @@
 -Zugriff von anderen Rechnern
--Passwort vergessen
 -Profilbilder ändern
 -FAQ
 -mehrere Links auf Bildern selbst einfügen
