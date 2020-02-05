@@ -8,4 +8,4 @@
 -30.01.20: Arbeiten an PHP Sessions. (90min)
 -31.01.20: Arbeiten an Sessions, Passwort-Hash, Profil-Aufbau. (90min)
 -05.02.20: Verknüpfen der Datenbanken miteinander. (90min)
--05.02.20: Arbeiten an Struktur von profile.php. (45min)
+-05.02.20: Arbeiten an Struktur von profile.php. (60min)
