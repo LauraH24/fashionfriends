@@ -21,6 +21,8 @@
 				
 				$db = mysqli_connect('localhost','root','','bbs');
 				
+				$sql = "SELECT * FROM ff
+				
 				echo "<div id='profilbild'>";
 				echo "<div id='benutzername'>";
 				echo "<div id='bio'>";
