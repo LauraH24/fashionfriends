@@ -6,6 +6,7 @@
 -Biografie in Profil einfügen & ändern
 -Kommentare und Like-Button
 -allen Bilder quadratische Größe zuordnen
+-Kategorie.php überarbeiten
 
 Nochmal kontrollieren:
 -Passwörter verschlüsseln

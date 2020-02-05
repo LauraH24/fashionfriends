@@ -40,8 +40,18 @@
 				$profilbild = $_SESSION['profilbild'];
 				
 				echo "<div id='profilbild'>";
+					echo "<img src='profiles/'$profilbild''>";
+				echo "</div>";
 				echo "<div id='benutzername'>";
+					echo "<h3>$benutzername</h3></br></br>";
+					echo "<h4>$vorname $nachname</h4>";
+				echo "</div>";
 				echo "<div id='bio'>";
+					echo "So stylt sich $vorname:</br>";
+					
+				echo "</div>"
+				
+				
 				echo "<table>";
 				echo "<tr>";
 				echo "<th> </th>";
