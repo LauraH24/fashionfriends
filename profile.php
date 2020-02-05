@@ -21,7 +21,23 @@
 				
 				$db = mysqli_connect('localhost','root','','bbs');
 				
-				$sql = "SELECT * FROM ff
+				$sql = "SELECT * FROM ffbenutzer WHERE email = '$email'";
+				$res = mysqli_query($db, $sql);
+				
+				while($datensatz = mysqli_fetch_assoc($res))
+				{
+					$id = "datensatz[id]";
+					$vorname = "datensatz[vorname]";
+					$nachname = "datensatz[nachname]";
+					$benutzername = "datensatz[benutzername]";
+					$profilbild = "datensatz[profilbild]";
+				}
+				
+				$id = $_SESSION['id'];
+				$vorname = $_SESSION['vorname'];
+				$nachname = $_SESSION['nachname'];
+				$benutzername = $_SESSION['benutzername'];
+				$profilbild = $_SESSION['profilbild'];
 				
 				echo "<div id='profilbild'>";
 				echo "<div id='benutzername'>";
