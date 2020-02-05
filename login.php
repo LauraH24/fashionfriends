@@ -26,7 +26,7 @@
 					echo"</table> </br>";
 			
 					echo"<input type='submit' name='senden'/></br>";
-					echo"<input type='reset' name='Zurücksetzen'/></br>";
+					echo"<input type='reset' name='Zurücksetzen'/></br></br></br>";
 				echo"</form>";
 			}
 			else{
