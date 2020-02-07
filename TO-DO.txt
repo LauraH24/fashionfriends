@@ -6,7 +6,8 @@
 -Biografie in Profil einfügen & ändern
 -Kommentare und Like-Button
 -allen Bilder quadratische Größe zuordnen
--Kategorie.php überarbeiten (Bilder und Kategorien einfügen)
+-Kategorie.php überarbeiten
+-werden Profilbilder in Ordner verschoben?
 
 Nochmal kontrollieren:
 -Passwörter verschlüsseln
