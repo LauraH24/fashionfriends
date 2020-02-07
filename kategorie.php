@@ -12,14 +12,14 @@
 	<?php
 		echo"<table>";
 			echo"<tr>";
-				echo"<td><img src='' alt=''></td>";
-				echo"<td><img src='' alt=''></td>";
-				echo"<td><img src='' alt=''></td>";
+				echo"<td><img src='' alt=''></br><input type='checkbox' name='' value=''</td>";
+				echo"<td><img src='' alt=''></br><input type='checkbox' name='' value=''</td>";
+				echo"<td><img src='' alt=''></br><input type='checkbox' name='' value=''</td>";
 			echo "</tr>";
 			echo "<tr>";
-				echo "<td><img src='' alt=''></td>";
-				echo "<td><img src='' alt=''></td>";
-				echo "<td><img src='' alt=''></td>";
+				echo "<td><img src='' alt=''></br><input type='checkbox' name='' value=''</td>";
+				echo "<td><img src='' alt=''></br><input type='checkbox' name='' value=''</td>";
+				echo "<td><img src='' alt=''></br><input type='checkbox' name='' value=''</td>";
 			echo "</tr>";
 		echo"</table>";
 ?>
