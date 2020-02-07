@@ -60,10 +60,12 @@
 		echo"<div id='content'>";
 			while ($row = mysqli_fetch_array($result)) {
 			  echo "<div id='img_div'>";
-				echo "<img src='images/".$row['image']."' >";
+				echo "<img usemap'#map' src='images/".$row['image']."' >";
 				echo "<p>".$row['image_text']."</p>";
 			  echo "</div>";
 			}
+		echo"<map name='map'>";
+			echo"<area id='head' shape='circle' coords='40,350,'
 		}
 		?>
 	</body>

@@ -4,21 +4,8 @@
 		<meta charset='utf-8'>
 	</head>
 	<body>
-		<?php
-			if(!isset($_POST['senden']))
-			{
-				echo "<form action='' method='POST'>";
-				echo "<input type='password' name='passwort'>";
-				echo "<input type='submit' name='senden' value='Senden'>";
-			}
-			else
-			{
-				$passwort = $_POST['passwort'];
-				$hash = hash('sha256', $passwort);
-				
-				echo "$passwort";
-				echo "$hash";
-			}
-		?>
+		<img usemap='#map' src='test.jpg'>
+		<map name='map'>
+			<area shape='rect' coords='150,80,300,200' href='https://www2.hm.com/de_de/index.html'>
 	</body>
 </html>
