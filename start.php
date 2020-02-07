@@ -2,7 +2,7 @@
 	<head>
 		<title>FashionFriends</title>
 		<meta charset ='utf-8'>
-		<link href='tailwind.css' rel='stylesheet'>
+		<link href='style_beitragerstellen.css' rel='stylesheet'>
 	</head>
 	<body>
 		<header>
@@ -10,13 +10,13 @@
 			<img src='logo_neu.png' border='0' titl='logo'/>
 		</header>
 		<div id='login'>
-			<a href='login.php' titel='Login'>Anmelden</a></br>
+			<button type='button'><a href='login.php' name='login'>Anmelden</a></br>
 		</div>
 		<div id='text'>
 			Du hast kein Konto? </br>
 		</div>
 		<div id='registrieren'>
-			<a href='registrieren.php' titel='Registrieren'>Registrieren</a>
+			<button type='button'><a href='registrieren.php' name='registrieren'>Registrieren</a>
 		</div>
 	</body>
 </html>
