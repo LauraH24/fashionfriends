@@ -65,7 +65,10 @@
 			  echo "</div>";
 			}
 		echo"<map name='map'>";
-			echo"<area id='head' shape='circle' coords='40,350,'
+			echo"<area shape='rect' coords='100,40,400,200' href='$head' target='blank'>";
+			echo"<area shape='rect' coords='100,200,400,350' href='$top' target='blank'>";
+			echo"<area shape='rect' coords='100,350,400,700' href='$bottom' target='blank'>";
+			echo"<area shape='rect' coords='100,700,400,777' href='$shoes' target='blank'>";
 		}
 		?>
 	</body>
