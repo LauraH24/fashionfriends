@@ -5,7 +5,6 @@
 -Impressum-Seite
 -Biografie in Profil einfügen & ändern
 -Kommentare und Like-Button
--allen Bilder quadratische Größe zuordnen
 -Dateien im Ordner ordnen!
 
 Nochmal kontrollieren:
@@ -15,4 +14,5 @@ Nochmal kontrollieren:
 -Kategorie.php
 -werden Profilbilder in Ordner verschoben?
 -klappt der Bildupload?
+-bekommen alle einheitliche Größe?
 
