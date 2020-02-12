@@ -7,9 +7,11 @@
 -Kommentare und Like-Button
 -allen Bilder quadratische Größe zuordnen
 -Kategorie.php überarbeiten
--werden Profilbilder in Ordner verschoben?
+-Dateien im Ordner ordnen!
 
 Nochmal kontrollieren:
 -Passwörter verschlüsseln
 -Sessions
 -Hilfeformular
+-werden Profilbilder in Ordner verschoben?
+-klappt der Bildupload?
