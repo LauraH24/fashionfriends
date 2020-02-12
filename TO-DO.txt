@@ -6,10 +6,13 @@
 -Biografie in Profil einfügen & ändern
 -Kommentare und Like-Button
 -allen Bilder quadratische Größe zuordnen
--werden Profilbilder in Ordner verschoben?
+-Dateien im Ordner ordnen!
 
 Nochmal kontrollieren:
 -Passwörter verschlüsseln
 -Sessions
 -Hilfeformular
 -Kategorie.php
+-werden Profilbilder in Ordner verschoben?
+-klappt der Bildupload?
+
