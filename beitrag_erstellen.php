@@ -60,7 +60,7 @@
 		echo"<div id='content'>";
 			while ($row = mysqli_fetch_array($result)) {
 			  echo "<div id='img_div'>";
-				echo "<img usemap'#map' src='images/".$row['image']."' >";
+				echo "<img usemap'#map' src='images/".$row['image']."' width='518' height='777'>";
 				echo "<p>".$row['image_text']."</p>";
 			  echo "</div>";
 			}
