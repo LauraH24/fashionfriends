@@ -1,9 +1,9 @@
 -Zugriff von anderen Rechnern
 -Passwort vergessen
 -Profilbilder ändern
--FAQ
+-FAQ (Sara)
 -mehrere Links auf Bildern selbst einfügen
--Impressum-Seite
+-Impressum-Seite (Sara)
 -Biografie in Profil einfügen & ändern
 -Kommentare und Like-Button
 -allen Bilder quadratische Größe zuordnen

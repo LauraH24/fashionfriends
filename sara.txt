@@ -1,4 +1,7 @@
 Dezember 2019- Januar 2020: Design mit Anna auf Figma -> 6 Schulstunden
 Dezember 2019: Vorlage Seite Lastenheft -> 3 Schulstunden
 Dezember 2019: Kurs von Louis -> 1 Schulstunde
-
+Januar 2020: Informationsbeschaffung zufällige Bildausgabe -> 1 Schulstunde
+Januar 2020: Zufällige Bildausgabe mit php -> 1 Schulstunde
+Februar 2020: Informieren über die Passwort vergessen-Funktion -> 2 Schulstunden
+Februar 2020: FAQ erstellt -> 2 Schulstunden
