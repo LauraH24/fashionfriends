@@ -7,4 +7,4 @@ Ich hab gemacht:
 -Hilfe-Formular erstellen (3 Schulstunde)
 -Mysql Datenbank hosten informieren (1 Schulstunde)
 -Kommentare und Like Button in der Explore-Seite(4 Schulstunden)
--Impressum Seite erstellt (1 Schulstunde)
+-Impressum Seite erstellt (1,5 Schulstunde)

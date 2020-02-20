@@ -2,7 +2,6 @@
 -Profilbilder ändern
 -FAQ
 -mehrere Links auf Bildern selbst einfügen
--Impressum-Seite
 -Biografie in Profil einfügen & ändern
 -Kommentare und Like-Button
 -Dateien im Ordner ordnen!
