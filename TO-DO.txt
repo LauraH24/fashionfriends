@@ -4,7 +4,7 @@
 -mehrere Links auf Bildern selbst einfügen
 -Biografie in Profil einfügen & ändern
 -Kommentare und Like-Button
--Dateien im Ordner ordnen!
+-Dateien im Ordner ordnen! (wichtig alle Dateien an neue Struktur anpassen!)
 
 Nochmal kontrollieren:
 -Passwörter verschlüsseln
