@@ -19,8 +19,8 @@
 			.$sql_abfrage="SELECT COUNT ($like) FROM ffexplore";
 			while ($row = mysqli_fetch_array($result)) {
 			echo"<h2> Fashion Friends </h2>";
-			echo"<img src="logo_neu.png" name="logo"> </br>";
-			echo"<div id='name und bild'>";
+			echo"<img src='logo_neu.png' name='logo'></br>";
+			echo"<div id='name_bild'>";
 				echo"$benutzername";
 				echo"$profilbild </br>";
 			echo"</div>";
@@ -28,8 +28,8 @@
       			echo "$image >";
       		echo "</div>";
       		echo"<div id='likes'>";
-      			echo"<img src="herz1.jpg" onclick="switchImg(this)">";
-    			echo"<img src="herz2.jpg" onclick="switchImg(this)">";
+      			echo"<img src='herz1.jpg' onclick='switchImg(this)'>";
+    			echo"<img src='herz2.jpg' onclick='switchImg(this)'>";
       		echo"</div>";
       		echo"<div id='image text'>";
       			echo"$image_text </br>";
