@@ -4,21 +4,11 @@
 		<meta charset='utf-8'>
 	</head>
 	<body>
-		<?php
-			if(!isset($_POST['senden']))
-			{
-				echo "<form action='' method='POST'>";
-				echo "<input type='password' name='passwort'>";
-				echo "<input type='submit' name='senden' value='Senden'>";
-			}
-			else
-			{
-				$passwort = $_POST['passwort'];
-				$hash = hash('sha256', $passwort);
-				
-				echo "$passwort";
-				echo "$hash";
-			}
-		?>
+		<img usemap='#map' src='test.jpg'>
+		<map name='map'>
+			<area shape='rect' coords='100,40,400,200' href='https://www2.hm.com/de_de/index.html' target='blank'>
+			<area shape='rect' coords='100,200,400,350' href='https://www.asos.com/de/' target='blank'>
+			<area shape='rect' coords='100,350,400,700' href='https://www.zalando.de/damen-home/' target='blank'>
+			<area shape='rect' coords='100,700,400,777' href='' target='blank'>
 	</body>
 </html>

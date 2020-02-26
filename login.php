@@ -26,7 +26,7 @@
 					echo"</table> </br>";
 			
 					echo"<input type='submit' name='senden'/></br>";
-					echo"<input type='reset' name='Zurücksetzen'/></br>";
+					echo"<input type='reset' name='Zurücksetzen'/></br></br></br>";
 				echo"</form>";
 			}
 			else{
@@ -39,7 +39,7 @@
 
 				$db = mysqli_connect('localhost','root','','bbs');
 		
-				$sql = "SELECT pass FROM ffbenutzer WHERE email='$email'";
+				$sql = "SELECT pass, id FROM ffbenutzer WHERE email='$email'";
 				$res = mysqli_query ($db, $sql);
 		
 		
@@ -47,11 +47,16 @@
 				{
 			
 					$pass2 = "$datensatz[pass]";
+					$id = "$datensatz[id]";
 				}
+				
+				$_SESSION['id']=$id;
+				
 				if($pass == $pass2)
 				{
 				echo "<h1>Vielen Dank für deine Anmeldung!</h1></br>";
 				echo "<a href='profile.php'>Weiter zu deinem Profil</a>";
+				echo "<a href='beitrag_erstellen.php'>Beitrag erstellen</a>";
 				}
 				else
 				{

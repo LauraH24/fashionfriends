@@ -1,14 +1,21 @@
 -Zugriff von anderen Rechnern
--Passwort vergessen
 -Profilbilder ändern
 -mehrere Links auf Bildern selbst einfügen
+<<<<<<< HEAD
 -Impressum-Seite (Sara)
+=======
+>>>>>>> d8073dfb56bda966679d0d2a1bf56f5f84df5bd1
 -Biografie in Profil einfügen & ändern
 -Kommentare und Like-Button
--allen Bilder quadratische Größe zuordnen
--Datenbank ffupload mit ffbenutzer verknüpfen
+-Dateien im Ordner ordnen! (wichtig alle Dateien an neue Struktur anpassen!)
 
 Nochmal kontrollieren:
 -Passwörter verschlüsseln
 -Sessions
 -Hilfeformular
+-Kategorie.php
+-werden Profilbilder in Ordner verschoben?
+-klappt der Bildupload?
+-bekommen alle einheitliche Größe?
+-Fehlermeldung in profile.php kontrollieren bzw. nachfragen
+

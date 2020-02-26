@@ -21,9 +21,38 @@
 				
 				$db = mysqli_connect('localhost','root','','bbs');
 				
+				$sql = "SELECT * FROM ffbenutzer WHERE email = '$email'";
+				$res = mysqli_query($db, $sql);
+				
+				while($datensatz = mysqli_fetch_assoc($res))
+				{
+					$id = "$datensatz[id]";
+					$vorname = "$datensatz[vorname]";
+					$nachname = "$datensatz[nachname]";
+					$benutzername = "$datensatz[benutzername]";
+					$profilbild = "$datensatz[profilbild]";
+					
+					$id2 = $_SESSION['id'];
+					$vorname2 = $_SESSION['vorname'];
+					$nachname2 = $_SESSION['nachname'];
+					$benutzername2 = $_SESSION['benutzername'];
+					$profilbild2 = $_SESSION['profilbild'];
+				}
+				
+				
 				echo "<div id='profilbild'>";
+					echo "<img src='profiles/'$profilbild''>";
+				echo "</div>";
 				echo "<div id='benutzername'>";
+					echo "<h3>$benutzername</h3></br></br>";
+					echo "<h4>$vorname $nachname</h4>";
+				echo "</div>";
 				echo "<div id='bio'>";
+					echo "So stylt sich $email $vorname $nachname $id $id2:</br>";
+					
+				echo "</div>";
+				
+				
 				echo "<table>";
 				echo "<tr>";
 				echo "<th> </th>";
