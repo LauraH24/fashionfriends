@@ -1,7 +1,6 @@
 -Zugriff von anderen Rechnern
 -Passwort vergessen
 -Profilbilder ändern
--FAQ (Sara)
 -mehrere Links auf Bildern selbst einfügen
 -Impressum-Seite (Sara)
 -Biografie in Profil einfügen & ändern
