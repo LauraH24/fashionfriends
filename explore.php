@@ -15,9 +15,13 @@
 		<?php
 		if(!isset($_POST['senden']))
 		{
-			$sql_abfrage="SELECT $profilbild,$benutzername, $image, $image_text, $kommentare FROM ffbenutzer INNER JOIN ffupload ON $id=$id";
-			.$sql_abfrage="SELECT COUNT ($like) FROM ffexplore";
-			while ($row = mysqli_fetch_array($result)) {
+			$db = mysqli_connect('localhost','root','','bbs');
+
+			$sql_abfrage="SELECT $profilbild,$benutzername, $id FROM ffbenutzer AND $image, $image_text, $id FROM ffupload AND $like_id FROM fflike AND $kommentar_id, $kommentar FROM ffkommentare AND SELECT COUNT $like_id FROM fflike";
+
+			$res = mysqli_query ($db, $sql);
+			$num=mysqli_num_rows($sql);
+
 			echo"<h2> Fashion Friends </h2>";
 			echo"<img src='logo_neu.png' name='logo'></br>";
 			echo"<div id='name_bild'>";
@@ -25,7 +29,7 @@
 				echo"$profilbild </br>";
 			echo"</div>";
       		echo "<div id='img'>";
-      			echo "$image >";
+      			echo "$image";
       		echo "</div>";
       		echo"<div id='likes'>";
       			echo"<img src='herz1.jpg' onclick='switchImg(this)'>";
@@ -35,31 +39,31 @@
       			echo"$image_text </br>";
       		echo"</div>";
       		echo"<div id='kommentare'>";
-      			echo"$kommentare";
+      			echo"$kommentar";
       			echo"<form action='' method='POST'>";
-      				echo"<input type='text' id='kommentar_schreiben' name='kommentar_schreiben'></br>";
-      				echo"input type='submit' id='senden' name='senden'>";
+      				echo"<input type='text' id='kommentar' name='kommentar'></br>";
+      				echo"<input type='submit' id='senden' name='senden'>";
       				echo"<input type='reset' id='loeschen' name='loeschen'>";
       			echo"</form>";
       		echo"</div>";
-    		}
-    	}
-		else{
+    	}		
+    		else{
 			session_start();
-			$like = $_POST['like'];
-			$kommentar_schreiben = $_POST['kommentar_schreiben'];
+			$like = $_POST['like_id'];
+			$kommentar = $_POST['kommentar'];
+			$kommentar_id = $_POST['kommentar_id'];
+			$profilbild = $_POST['profilbild'];
+			$benutzername = $_POST['benutzername'];
+			$image = $_POST['image'];
+			$image_text = $_POST['image_text'];
 				
-			$_SESSION['like']=$like;
-			$_SESSION['kommentar_schreiben']=$kommentar_schreiben;
+			$_SESSION['like_id']=$like_id;
+			$_SESSION['kommentar']=$kommentar;
+			$_SESSION['$kommentar_id']=$kommentar_id;
 			$_SESSION['$profilbild']=$profilbild;
-			$_SESSION['$benutzername']=$benutzername:
+			$_SESSION['$benutzername']=$benutzername;
 			$_SESSION['$image']=$image;
 			$_SESSION['$image_text']=$image_text;
-			$_SESSION['$kommentare']=$kommentare;
-
-			$db = mysqli_connect('localhost','root','','bbs');
-
-			$res = mysqli_query ($db, $sql);
 		}
 		?>
 	</body>
