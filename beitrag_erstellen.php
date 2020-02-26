@@ -31,44 +31,65 @@
 		else
 		{	
 		session_start();
-			$db = mysqli_connect("localhost","root","","bbs");
-			
-			$id = $_SESSION['id'];
-			
-		  // If upload button is clicked ...
-		  if (isset($_POST['upload'])) {
-			// Get image name
-			$image = $_FILES['image']['name'];
-			// Get text
-			$image_text = mysqli_real_escape_string($db, $_POST['image_text']);
+				$db = mysqli_connect("localhost","root","","bbs");
+				
+				$id = $_SESSION['id'];
+				
+			  // If upload button is clicked ...
+			  if (isset($_POST['upload'])) {
+				// Get image name
+				$image = $_FILES['image']['name'];
+				// Get text
+				$image_text = mysqli_real_escape_string($db, $_POST['image_text']);
 
-			// image file directory
-			$target = "images/".basename($image);
+				// image file directory
+				$target = "images/".basename($image);
 
-			$sql = "INSERT INTO ffupload (image, image_text, id) VALUES ('$image', '$image_text','$id')";
-			// execute query
-			mysqli_query($db, $sql);
+				$sql = "INSERT INTO ffupload (image, image_text, id) VALUES ('$image', '$image_text','$id')";
+				// execute query
+				mysqli_query($db, $sql);
 
-			if (move_uploaded_file($_FILES['image']['tmp_name'], $target)) {
-				$msg = "Image uploaded successfully";
-			}else{
-				$msg = "Failed to upload image";
+				if (move_uploaded_file($_FILES['image']['tmp_name'], $target)) {
+					$msg = "Image uploaded successfully";
+				}else{
+					$msg = "Failed to upload image";
+				}
+			  }
+			  $result = mysqli_query($db, "SELECT * FROM ffupload");
+
+			echo"<div id='content'>";
+				while ($row = mysqli_fetch_array($result)) {
+				  echo "<div id='img_div'>";
+					echo "<img usemap'#map' src='images/".$row['image']."' width='518' height='777'>";
+					echo "<p>".$row['image_text']."</p>";
+				  echo "</div>";
+				}
+			if(!isset($_POST['senden'])){
+				echo "<form method='POST' action=''>";
+				echo "<input type='text' name='head' placeholder='Kopf'>";
+				echo "<input type='text' name='top' placeholder='Oberteil'>";
+				echo "<input type='text' name='bottom' placeholder='Unterteil'>";
+				echo "<input type='text' name='shoes' placeholder='Schuhe'>";
+				echo "<input type='submit' name='senden' value='Senden'>";
+				echo "</form>";
 			}
-		  }
-		  $result = mysqli_query($db, "SELECT * FROM ffupload");
-
-		echo"<div id='content'>";
-			while ($row = mysqli_fetch_array($result)) {
-			  echo "<div id='img_div'>";
-				echo "<img usemap'#map' src='images/".$row['image']."' width='518' height='777'>";
-				echo "<p>".$row['image_text']."</p>";
-			  echo "</div>";
+			else{
+				$head = $_POST['head'];
+				$top = $_POST['top'];
+				$bottom = $_POST['bottom'];
+				$shoes = $_POST['shoes'];
+				
+				echo "$head $top $bottom $shoes";
+				
+				$sql = "UPDATE ffupload SET kopf='$head', oben='$top', unten='$bottom', schuhe='$shoes'";
+				$result = mysqli_query($db, $sql);
+				
+				echo"<map name='map'>";
+					echo"<area shape='rect' coords='100,40,400,200' href='$head' target='blank'>";
+					echo"<area shape='rect' coords='100,200,400,350' href='$top' target='blank'>";
+					echo"<area shape='rect' coords='100,350,400,700' href='$bottom' target='blank'>";
+					echo"<area shape='rect' coords='100,700,400,777' href='$shoes' target='blank'>";
 			}
-		echo"<map name='map'>";
-			echo"<area shape='rect' coords='100,40,400,200' href='$head' target='blank'>";
-			echo"<area shape='rect' coords='100,200,400,350' href='$top' target='blank'>";
-			echo"<area shape='rect' coords='100,350,400,700' href='$bottom' target='blank'>";
-			echo"<area shape='rect' coords='100,700,400,777' href='$shoes' target='blank'>";
 		}
 		?>
 	</body>

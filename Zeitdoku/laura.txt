@@ -11,3 +11,4 @@
 -05.02.20: Arbeiten an Struktur von profile.php. (60min)
 -07.02.20: Arbeiten an Kategorie.php und Einfügen von Links in beitrag_erstellen.php. (90min)
 -12.02.20: Arbeiten an Einteilung der Areas und Bildupload. (90min)
+-26.02.20: Arbeiten an Bildupload und Sessions. (90min)
