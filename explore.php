@@ -17,7 +17,7 @@
 		{
 			$db = mysqli_connect('localhost','root','','bbs');
 
-			$sql_abfrage="SELECT $profilbild,$benutzername, $id FROM ffbenutzer AND $image, $image_text, $id FROM ffupload AND $like_id FROM fflike AND $kommentar_id, $kommentar FROM ffkommentare AND SELECT COUNT $like_id FROM fflike";
+			$sql_abfrage="SELECT profilbild,benutzername, id FROM ffbenutzer ffupload.image, ffupload.image_text, ffupload.id, ff.like_id, ffkommentare.kommentar_id, ffkommentare.kommentar";
 
 			$res = mysqli_query ($db, $sql);
 			$num=mysqli_num_rows($sql);
@@ -47,7 +47,7 @@
       			echo"</form>";
       		echo"</div>";
     	}		
-    		else{
+    	else{
 			session_start();
 			$like = $_POST['like_id'];
 			$kommentar = $_POST['kommentar'];
