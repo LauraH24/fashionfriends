@@ -21,26 +21,28 @@
 
 			$res = mysqli_query ($db, $sql);
 
+			echo"<div id='content'>";
 			while($datensatz=mysqli_fetch_assoc($res)){
 				$profilbild= "$datensatz[profilbild]";
 				$benutzername = "$datensatz[benutzername]";
 				$image = "$datensatz[image]";
 				$image_text = "$datensatz[image_text]";
-			}
 
-			echo"<h2> Fashion Friends </h2>";
-			echo"<img src='logo_neu.png' name='logo'></br>";
-			echo"<div id='name_bild'>";
-				echo"$benutzername";
-				echo"$profilbild </br>";
-			echo"</div>";
-      		echo "<div id='img'>";
-      			echo "$image";
-      		echo "</div>";
-      		echo"<div id='image text'>";
-      			echo"$image_text </br>";
-      		echo"</div>";
-    	}		
+				  echo "<div id='img_div'>";
+					echo "<img src='profiles/$profilbild' width='50' height='50'>";
+					echo "<p>$benutzername</p>";
+					echo "<img usemap='#map' src='images/$image' width='518' height='777'>";
+					echo "<p>$benutzername: $image_text</p>";
+				  echo "</div></br></br></br>";
+				 
+				  
+				echo"<map name='map'>
+					<area shape='rect' coords='100,40,400,200' href='https://www2.hm.com/de_de/index.html' target='blank'>
+					<area shape='rect' coords='100,200,400,350' href='https://www.asos.com/de/' target='blank'>
+					<area shape='rect' coords='100,350,400,700' href='https://www.zalando.de/damen-home/' target='blank'>
+					<area shape='rect' coords='100,700,400,777' href='' target='blank'>";
+				}	
+		}
     	else{
 			session_start();
 				

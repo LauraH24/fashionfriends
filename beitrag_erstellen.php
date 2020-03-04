@@ -22,6 +22,11 @@
 				rows='4' 
 				name='image_text' 
 				placeholder='Bildbeschreibung hinzufügen'></textarea>";
+			echo "</br>";	
+			echo "<input type='text' name='head' placeholder='Kopf'>";
+			echo "<input type='text' name='top' placeholder='Oberteil'>";
+			echo "<input type='text' name='bottom' placeholder='Unterteil'>";
+			echo "<input type='text' name='shoes' placeholder='Schuhe'>";
 			echo"</div>";
 			echo"<div>";
 			echo"<button type='submit' name='upload'>Upload</button>";
@@ -31,7 +36,12 @@
 		else
 		{	
 		session_start();
-				$db = mysqli_connect("localhost","root","","bbs");
+				$db = mysqli_connect('localhost','root','','bbs');
+				
+				$head = $_POST['head'];
+				$top = $_POST['top'];
+				$bottom = $_POST['bottom'];
+				$shoes = $_POST['shoes'];
 				
 				$id = $_SESSION['id'];
 				
@@ -45,7 +55,7 @@
 				// image file directory
 				$target = "images/".basename($image);
 
-				$sql = "INSERT INTO ffupload (image, image_text, id) VALUES ('$image', '$image_text','$id')";
+				$sql = "INSERT INTO ffupload (image, image_text, id, kopf, oben, unten, schuhe) VALUES ('$image', '$image_text','$id','$head','$top','$bottom','$shoes')";
 				// execute query
 				mysqli_query($db, $sql);
 
@@ -64,32 +74,12 @@
 					echo "<p>".$row['image_text']."</p>";
 				  echo "</div>";
 				}
-			if(!isset($_POST['senden'])){
-				echo "<form method='POST' action=''>";
-				echo "<input type='text' name='head' placeholder='Kopf'>";
-				echo "<input type='text' name='top' placeholder='Oberteil'>";
-				echo "<input type='text' name='bottom' placeholder='Unterteil'>";
-				echo "<input type='text' name='shoes' placeholder='Schuhe'>";
-				echo "<input type='submit' name='senden' value='Senden'>";
-				echo "</form>";
-			}
-			else{
-				$head = $_POST['head'];
-				$top = $_POST['top'];
-				$bottom = $_POST['bottom'];
-				$shoes = $_POST['shoes'];
-				
-				echo "$head $top $bottom $shoes";
-				
-				$sql = "UPDATE ffupload SET kopf='$head', oben='$top', unten='$bottom', schuhe='$shoes'";
-				$result = mysqli_query($db, $sql);
-				
+
 				echo"<map name='map'>";
-					echo"<area shape='rect' coords='100,40,400,200' href='$head' target='blank'>";
+					echo"<area shape='rect' coords='100,40,400,200' href='https://www.zalando.de/damen-home/' target='blank'>";
 					echo"<area shape='rect' coords='100,200,400,350' href='$top' target='blank'>";
 					echo"<area shape='rect' coords='100,350,400,700' href='$bottom' target='blank'>";
 					echo"<area shape='rect' coords='100,700,400,777' href='$shoes' target='blank'>";
-			}
 		}
 		?>
 	</body>
