@@ -17,7 +17,7 @@
 		{
 			$db = mysqli_connect('localhost','root','','bbs');
 
-			$sql="SELECT ffbenutzer.profilbild,ffbenutzer.benutzername, ffupload.image, ffupload.image_text";
+			$sql="SELECT ffbenutzer.profilbild,ffbenutzer.benutzername, ffupload.image, ffupload.image_text FROM ffbenutzer, ffupload";
 
 			$res = mysqli_query ($db, $sql);
 
