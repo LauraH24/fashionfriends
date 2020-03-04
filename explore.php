@@ -17,10 +17,16 @@
 		{
 			$db = mysqli_connect('localhost','root','','bbs');
 
-			$sql_abfrage="SELECT profilbild,benutzername, id FROM ffbenutzer ffupload.image, ffupload.image_text, ffupload.id, ff.like_id, ffkommentare.kommentar_id, ffkommentare.kommentar";
+			$sql="SELECT ffbenutzer.profilbild,ffbenutzer.benutzername, ffupload.image, ffupload.image_text";
 
 			$res = mysqli_query ($db, $sql);
-			$num=mysqli_num_rows($sql);
+
+			while($datensatz=mysqli_fetch_assoc($res)){
+				$profilbild= "$datensatz[profilbild]";
+				$benutzername = "$datensatz[benutzername]";
+				$image = "$datensatz[image]";
+				$image_text = "$datensatz[image_text]";
+			}
 
 			echo"<h2> Fashion Friends </h2>";
 			echo"<img src='logo_neu.png' name='logo'></br>";
@@ -31,35 +37,13 @@
       		echo "<div id='img'>";
       			echo "$image";
       		echo "</div>";
-      		echo"<div id='likes'>";
-      			echo"<img src='herz1.jpg' onclick='switchImg(this)'>";
-    			echo"<img src='herz2.jpg' onclick='switchImg(this)'>";
-      		echo"</div>";
       		echo"<div id='image text'>";
       			echo"$image_text </br>";
-      		echo"</div>";
-      		echo"<div id='kommentare'>";
-      			echo"$kommentar";
-      			echo"<form action='' method='POST'>";
-      				echo"<input type='text' id='kommentar' name='kommentar'></br>";
-      				echo"<input type='submit' id='senden' name='senden'>";
-      				echo"<input type='reset' id='loeschen' name='loeschen'>";
-      			echo"</form>";
       		echo"</div>";
     	}		
     	else{
 			session_start();
-			$like = $_POST['like_id'];
-			$kommentar = $_POST['kommentar'];
-			$kommentar_id = $_POST['kommentar_id'];
-			$profilbild = $_POST['profilbild'];
-			$benutzername = $_POST['benutzername'];
-			$image = $_POST['image'];
-			$image_text = $_POST['image_text'];
 				
-			$_SESSION['like_id']=$like_id;
-			$_SESSION['kommentar']=$kommentar;
-			$_SESSION['$kommentar_id']=$kommentar_id;
 			$_SESSION['$profilbild']=$profilbild;
 			$_SESSION['$benutzername']=$benutzername;
 			$_SESSION['$image']=$image;
