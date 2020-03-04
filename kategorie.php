@@ -1,28 +1,27 @@
-<html>
+<!DOCTYPE html>
+
+	<html>
 	<head>
 		<meta charset="utf-8">
-		<link href=".css" rel="stylesheet">
-		<title> Fashionfriends Kategorien </title>
+		<link href="Kategorien.css" rel="stylesheet">
+		<title> Kategorien Style </title>
 	</head>
 	<body>
 
-		<h1>Wähle zwei Kategorien, die deinen Style beschreiben.</h1>
+		<h1>Entdecke deinen individuellen Style mit Fashion Friends! Wähle dazu zwei Outfits, die deinen Style beschreiben.</h1>
 
-		<a href="./start.php">Zurück zur Startseite</a></br></br>
+		</br>
 	<?php
 		echo"<table>";
 			echo"<tr>";
-				echo"<td><img src='' alt=''></br><input type='checkbox' name='' value=''</td>";
-				echo"<td><img src='' alt=''></br><input type='checkbox' name='' value=''</td>";
-				echo"<td><img src='' alt=''></br><input type='checkbox' name='' value=''</td>";
-			echo "</tr>";
-			echo "<tr>";
-				echo "<td><img src='' alt=''></br><input type='checkbox' name='' value=''</td>";
-				echo "<td><img src='' alt=''></br><input type='checkbox' name='' value=''</td>";
-				echo "<td><img src='' alt=''></br><input type='checkbox' name='' value=''</td>";
+				echo"<td><img src='sportlich.jpg' alt=''></br><input type='checkbox' name='' value=''</td>";
+				echo"<td><img src='schick.jpg' alt=''></br><input type='checkbox' name='' value=''</td>";
+				echo"<td><img src='casual.jpg' alt=''></br><input type='checkbox' name='' value=''</td>";
+				echo "<td><img src='trendy.jpg' alt=''></br><input type='checkbox' name='' value=''</td>";
 			echo "</tr>";
 		echo"</table>";
 ?>
-			
+	<a href="./start.php">Zurück zur Startseite</a></br>
+	</br>		
 	</body>
 </html>
