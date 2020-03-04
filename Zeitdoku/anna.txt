@@ -6,5 +6,5 @@ Ich hab gemacht:
 -CSS Dateien mit Hilfe von Figma erstellen (2 Schulstunden+1 Stunde zuhause)
 -Hilfe-Formular erstellen (3 Schulstunde)
 -Mysql Datenbank hosten informieren (1 Schulstunde)
--Kommentare und Like Button in der Explore-Seite(6 Schulstunden)
+-Kommentare und Like Button in der Explore-Seite(8 Schulstunden)
 -Impressum Seite erstellt (1,5 Schulstunde)
