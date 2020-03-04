@@ -2,11 +2,11 @@
 	<head>
 		<title>FashionFriends</title>
 		<meta charset ='utf-8'>
-		<link href='https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css' rel='stylesheet'>
+		<link href='start.css' rel='stylesheet'>
 	</head>
 	<body>
 		<header>
-			<h1>Willkommen bei FashionFriends!</h1></br></br>
+			<h1>FashionFriends</h1></br></br>
 			<img src='logo_neu.png' border='0' titl='logo'/>
 		</header>
 		<div id='login'>

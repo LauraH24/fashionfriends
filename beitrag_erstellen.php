@@ -2,15 +2,16 @@
 	<head>
 		<title>FF - Beitrag erstellen</title>
 		<meta charset='utf-8'>
-		<link href='style_beitragerstellen.css' rel='stylesheet'>
+		<link href='beitragerstellen.css' rel='stylesheet'>
 		<link rel="shortcut icon" type="image/x-icon" href="logo_neu.png">
 	</head>
 	<body>
+		<form class="box" action="index.html" method="post">
 	<h1>Beitrag erstellen</h1>
 		<?php
 		if(!isset($_POST['upload']))
 		{
-		echo"<form method='POST' action='beitrag_erstellen.php' enctype='multipart/form-data'>";
+		echo"<form  method='POST' action='beitrag_erstellen.php' enctype='multipart/form-data'>";
 			echo"<input type='hidden' name='size' value='1000000'>";
 			echo"<div>";
 			echo"<input type='file' name='image'>";
@@ -82,5 +83,6 @@
 					echo"<area shape='rect' coords='100,700,400,777' href='$shoes' target='blank'>";
 		}
 		?>
+	</form>
 	</body>
 </html>

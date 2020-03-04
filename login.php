@@ -1,14 +1,14 @@
 <html>
+<html lang="en" dir="ltr">
 	<head>
 		<meta charset="utf-8">
-		<link href=".css" rel="stylesheet">
+		<link href="login.css" rel="stylesheet">
 		<title>Login</title>
 	</head>
 	<body>
 
-		<h1> Logge dich ein:</h1>
-
-		<a href="start.php">Zurück zur Startseite</a></br></br>
+	<form class="box" action="index.html" method="post">
+		<h1> Login</h1>
 
 		<?php
 			if(!isset($_POST['senden']))
@@ -16,16 +16,16 @@
 				echo"<form action='' method='POST'>";
 					echo"<table>";
 					echo"<tr>";
-						echo"<td> Bitte geben sie ihre E-Mail an: </td>";
+						echo"<td> E-Mail: </td>";
 						echo"<td> <input type='email' name='email'/> </td>";
 					echo"</tr>";
 					echo"<tr>";
-						echo"<td> Bitte geben sie ihr Passwort ein: </td>";
+						echo"<td> Passwort: </td>";
 						echo"<td> <input type='password' name='passwort'/> </td>";
 					echo"</tr>";
 					echo"</table> </br>";
 			
-					echo"<input type='submit' name='senden'/></br>";
+					echo"<input type='submit' name='senden' value='Login'/></br>";
 					echo"<input type='reset' name='Zurücksetzen'/></br></br></br>";
 				echo"</form>";
 			}
@@ -64,6 +64,8 @@
 				echo "<a href='login.php'>Erneut versuchen</a>";
 				}
 			}
-		?>
+		?> 
+	</form>
+		
 	</body>
 </html>

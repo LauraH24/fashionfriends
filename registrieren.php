@@ -1,15 +1,17 @@
 <html>
+<html lang="en" dir="ltr">
 	<head>
 		<title>Registrier dich!</title>
 		<meta charset='utf-8'>
-		<link href='registrieren_style.css' rel='stylesheet' >
+		<link href='registrieren.css' rel='stylesheet' >
 		<link rel="shortcut icon" type="image/x-icon" href="logo_neu.png">
 	</head>
 	<body>
+		<form class="box" action="index.html" method="post">
 		<?php
 			if(!isset($_POST['senden']))
 			{
-				echo "<h1>Anmelden bei FashionFriends</h1>";
+				echo "<h1>Registrierung</h1>";
 				echo "<table>";
 				echo "<td><form method='POST' action='' enctype='multipart/form-data'></td>";
 				echo "<tr>";
@@ -31,7 +33,7 @@
 				echo "<td>Passwort wiederholen:</td><td><input type='password' name='passwied'></br></td>";
 				echo "</tr>";
 				echo "<tr>";
-				echo "<td><input type='file' name='image'></td>";
+				echo "<td>Profilbild:</td><td><input type='file' name='image'></td>";
 				echo "</tr>";
 				echo "<tr>";
 				echo "<td><input type='submit' name='senden' value='Senden'></td>";
@@ -39,7 +41,6 @@
 				echo "</tr>";
 				echo "</form>";
 				
-				echo "<td><img id='imageklein' src='user.png'></td>";
 				echo "</tr>";
 				echo "</table>";
 				

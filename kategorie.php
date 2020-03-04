@@ -3,7 +3,7 @@
 	<html>
 	<head>
 		<meta charset="utf-8">
-		<link href="Kategorien.css" rel="stylesheet">
+		<link href="kategorien.css" rel="stylesheet">
 		<title> Kategorien Style </title>
 	</head>
 	<body>
