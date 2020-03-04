@@ -5,6 +5,7 @@
 -Biografie in Profil einfügen & ändern
 -Kommentare und Like-Button
 -Dateien im Ordner ordnen! (wichtig alle Dateien an neue Struktur anpassen!)
+-explore !!!!!!!
 
 Nochmal kontrollieren:
 -Passwörter verschlüsseln
