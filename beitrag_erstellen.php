@@ -6,7 +6,7 @@
 		<link rel="shortcut icon" type="image/x-icon" href="logo_neu.png">
 	</head>
 	<body>
-		<form class="box" action="index.html" method="post">
+		<form class="box" action="beitrag_erstellen.php" method="post">
 	<h1>Beitrag erstellen</h1>
 		<?php
 		if(!isset($_POST['upload']))

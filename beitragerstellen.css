@@ -21,7 +21,7 @@ body{
   text-decoration-line: underline;
 
 }
-.box input[type = "text"],.box input[type = "hidden"]{
+.box input[type = "text"],.box input[type = "hidden"],.box textarea[type = "text"]{
   border:0;
   background: none;
   display: block;
@@ -35,11 +35,11 @@ body{
   border-radius: 24px;
   transition: 0.25s;
 }
-.box input[type = "text"]:focus,.box input[type = "upload"]:focus{
+.box input[type = "text"]:focus,.box textarea[type = "text"]:focus,.box input[type = "hidden"],.box button[type = "button"]:focus{
   width: 280px;
   border-color: #2ecc71;
 }
-.box input[type = "upload"]{
+.box button[type = "submit"]{
   border:0;
   background: none;
   display: block;
@@ -53,6 +53,6 @@ body{
   transition: 0.25s;
   cursor: pointer;
 }
-.box input[type = "upload"]:hover{
+.box button[type = "submit"]:hover{
   background: #2ecc71;
 }
