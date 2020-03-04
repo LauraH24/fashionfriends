@@ -17,7 +17,7 @@
 		{
 			$db = mysqli_connect('localhost','root','','bbs');
 
-			$sql="SELECT ffbenutzer.profilbild,ffbenutzer.benutzername, ffupload.image, ffupload.image_text FROM ffbenutzer, ffupload";
+			$sql="SELECT * FROM ffbenutzer, ffupload";
 
 			$res = mysqli_query ($db, $sql);
 
@@ -27,6 +27,7 @@
 				$benutzername = "$datensatz[benutzername]";
 				$image = "$datensatz[image]";
 				$image_text = "$datensatz[image_text]";
+				
 
 				  echo "<div id='img_div'>";
 					echo "<img src='profiles/$profilbild' width='50' height='50'>";
@@ -37,10 +38,10 @@
 				 
 				  
 				echo"<map name='map'>
-					<area shape='rect' coords='100,40,400,200' href='https://www2.hm.com/de_de/index.html' target='blank'>
-					<area shape='rect' coords='100,200,400,350' href='https://www.asos.com/de/' target='blank'>
-					<area shape='rect' coords='100,350,400,700' href='https://www.zalando.de/damen-home/' target='blank'>
-					<area shape='rect' coords='100,700,400,777' href='' target='blank'>";
+					<area shape='rect' coords='100,40,400,200' href='$head' target='blank'>
+					<area shape='rect' coords='100,200,400,350' href='$top' target='blank'>
+					<area shape='rect' coords='100,350,400,700' href='$bottom' target='blank'>
+					<area shape='rect' coords='100,700,400,777' href='$shoes' target='blank'>";
 				}	
 		}
     	else{

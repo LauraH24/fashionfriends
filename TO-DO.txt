@@ -1,19 +1,17 @@
--Zugriff von anderen Rechnern
--Profilbilder ändern
--mehrere Links auf Bildern selbst einfügen
+(-Zugriff von anderen Rechnern)
+(-Profilbilder ändern)
 -Impressum-Seite (Sara)
--Biografie in Profil einfügen & ändern
--Kommentare und Like-Button
+(-Biografie in Profil einfügen & ändern)
+(-Kommentare und Like-Button)
 -Dateien im Ordner ordnen! (wichtig alle Dateien an neue Struktur anpassen!)
--explore !!!!!!!
+-explore !!!!!!! ->Bilder zu richtigen Nutzern zuordnen
 
 Nochmal kontrollieren:
 -Passwörter verschlüsseln
 -Sessions
 -Hilfeformular
--Kategorie.php
+(-Kategorie.php)
 -werden Profilbilder in Ordner verschoben?
--klappt der Bildupload?
 -bekommen alle einheitliche Größe?
 -Fehlermeldung in profile.php kontrollieren bzw. nachfragen
 
