@@ -1,0 +1,3 @@
+schuhe: https://www.vans.de/shop/de/vans-de/herren-schuhe-low-top-sneaker/old-skool-schuhe-vn0a38g1uku
+rock: https://www.zalando.de/damenbekleidung-roecke/_beige/
+tshirt: https://www.kickz.com/de/adidas-t-shirts-trefoil-t-shirt-white_craft_orange_-920573012
