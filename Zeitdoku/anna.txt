@@ -8,3 +8,5 @@ Ich hab gemacht:
 -Mysql Datenbank hosten informieren (1 Schulstunde)
 -Kommentare und Like Button in der Explore-Seite(8 Schulstunden)
 -Impressum Seite erstellt (1,5 Schulstunde)
+-Links und Fotos für die Datenbank rausgesucht (2 Stunden)
+-Funktionen aus den Coden rausgesucht und erklärt (1 Stunde)
