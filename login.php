@@ -7,7 +7,7 @@
 	</head>
 	<body>
 
-	<form class="box" action="index.html" method="post">
+	<form class="box" action="" method="post">
 		<h1> Login</h1>
 
 		<?php
@@ -33,6 +33,7 @@
 				session_start();
 				$email = $_POST['email'];
 				$pass = $_POST['passwort'];
+				$hash = hash('sha256',$pass);
 				
 				$_SESSION['email']=$email;
 				$_SESSION['passwort']=$pass;
@@ -52,7 +53,7 @@
 				
 				$_SESSION['id']=$id;
 				
-				if($pass == $pass2)
+				if($hash == $pass2)
 				{
 				echo "<h1>Vielen Dank für deine Anmeldung!</h1></br>";
 				echo "<a href='profile.php'>Weiter zu deinem Profil</a>";

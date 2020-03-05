@@ -7,13 +7,12 @@
 		<link rel="shortcut icon" type="image/x-icon" href="logo_neu.png">
 	</head>
 	<body>
-		<form class="box" action="index.html" method="post">
+		<form class="box" action="" method="post" enctype='multipart/form-data'>
 		<?php
 			if(!isset($_POST['senden']))
 			{
 				echo "<h1>Registrierung</h1>";
 				echo "<table>";
-				echo "<td><form method='POST' action='' enctype='multipart/form-data'></td>";
 				echo "<tr>";
 				echo "<td>Vorname:</td><td><input type='text' name='vorname'></br></td>";
 				echo "</tr>";
@@ -47,7 +46,7 @@
 			}
 			else
 			{
-				seesion_start();
+				session_start();
 				$db = mysqli_connect('localhost','root','','bbs');
 				
 				$vorname = $_POST['vorname'];
@@ -60,14 +59,15 @@
 				$image = $_FILES['image']['name'];
 				$target = "profiles/".basename($image);
 				
-				$_SESSION['vorname']=$vorname;
-				$_SESSION['nachname']=$nachname;
-				$_SESSION['benutzername']=$benutzername;
-				$_SESSION['email']=$email;
-				$_SESSION['pass']=$pass;
-				$_SESSION['image']=$image;
+								if (move_uploaded_file($_FILES['image']['tmp_name'], $target)) {
+					$msg = "Image uploaded successfully";
+				}else{
+					$msg = "Failed to upload image";
+				}
+				
 
-				$sql = "INSERT INTO ffbenutzer VALUES ('', '$vorname', '$nachname', '$benutzername', '$email', '$pass', '$image')";
+				$sql = "INSERT INTO ffbenutzer VALUES ('', '$vorname', '$nachname', '$benutzername', '$email', '$hash', '$image')";
+
 				
 				mysqli_query($db, $sql);
   
