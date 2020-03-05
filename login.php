@@ -49,7 +49,7 @@
 				if($hash == $pass2)
 				{
 				echo "<h1>Vielen Dank für deine Anmeldung!</h1></br>";
-				echo "<a href='profile.php'>Weiter zu deinem Profil</a>";
+				echo "<a href='profile.php'>Weiter zu deinem Profil</a></br>";
 				echo "<a href='beitrag_erstellen.php'>Beitrag erstellen</a></br>";
 				}
 				else

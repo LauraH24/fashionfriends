@@ -1,11 +1,13 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title> Explore Seite </title>
+		<link href="explore.css" rel="stylesheet">
+		<link rel="shortcut icon" type="image/x-icon" href="logo_neu.png">
+		<title>Explore</title>
 
 	</head>
 	<body>
-		<h1> Explore Seite </h1>
+		<h1> Explore Styles</h1>
 		<?php
 	session_start();
 	if(!isset($_SESSION['email']))
