@@ -2,31 +2,42 @@
 	<head>
 		<meta charset="utf-8">
 		<title> Explore Seite </title>
-		<script>
-			function switchImg(img){
-    			img.src = img.src.match(/_on/) ? 
-        		img.src.replace(/_on/, "_off") : 
-        		img.src.replace(/_off/, "_on");
-			}
-		</script>
+
 	</head>
 	<body>
 		<h1> Explore Seite </h1>
 		<?php
-		if(!isset($_POST['senden']))
-		{
+	session_start();
+	if(!isset($_SESSION['email']))
+	{
+		echo "<h1>Bitte logge dich erst ein!</h1></br>";
+		echo "<a href='login.php'>Login</a></br></br>";
+		echo "<h3>Noch nicht registriert? Melde dich jetzt an!</h3></br>";
+		echo "<a href='registrieren.php'>Registrieren</a>";
+	}
+	else
+	{
+			$emails = $_SESSION['email'];
+			$passwort = $_SESSION['passwort'];
+		
 			$db = mysqli_connect('localhost','root','','bbs');
+			
 
-			$sql="SELECT * FROM ffbenutzer, ffupload";
+			$sql="SELECT * FROM ffupload, ffbenutzer WHERE ffupload.id=ffbenutzer.id";
 
 			$res = mysqli_query ($db, $sql);
 
 			echo"<div id='content'>";
-			while($datensatz=mysqli_fetch_assoc($res)){
+			while($datensatz=mysqli_fetch_assoc($res))
+			{
 				$profilbild= "$datensatz[profilbild]";
 				$benutzername = "$datensatz[benutzername]";
 				$image = "$datensatz[image]";
 				$image_text = "$datensatz[image_text]";
+				$head = "$datensatz[kopf]";
+				$top = "$datensatz[oben]";
+				$bottom = "$datensatz[unten]";
+				$shoes = "$datensatz[schuhe]";
 				
 
 				  echo "<div id='img_div'>";
@@ -43,15 +54,9 @@
 					<area shape='rect' coords='100,350,400,700' href='$bottom' target='blank'>
 					<area shape='rect' coords='100,700,400,777' href='$shoes' target='blank'>";
 				}	
-		}
-    	else{
-			session_start();
-				
-			$_SESSION['$profilbild']=$profilbild;
-			$_SESSION['$benutzername']=$benutzername;
-			$_SESSION['$image']=$image;
-			$_SESSION['$image_text']=$image_text;
-		}
+		
+
+	}
 		?>
 	</body>
 </html>

@@ -68,22 +68,11 @@
 				}else{
 					$msg = "Failed to upload image";
 				}
+				echo "<h1>Bild wurde erfolgreich hochgeladen.</h1></br>";
+				echo "<a href='profile.php'>Profil</a> <a href='explore.php'</a>";
+				
+				
 			  }
-			  $result = mysqli_query($db, "SELECT * FROM ffupload");
-
-			echo"<div id='content'>";
-				while ($row = mysqli_fetch_array($result)) {
-				  echo "<div id='img_div'>";
-					echo "<img usemap='#map' src='images/".$row['image']."' width='518' height='777'>";
-					echo "<p>".$row['image_text']."</p>";
-				  echo "</div>";
-				}
-
-				echo"<map name='map'>";
-					echo"<area shape='rect' coords='100,40,400,200' href='$head' target='blank'>";
-					echo"<area shape='rect' coords='100,200,400,350' href='$top' target='blank'>";
-					echo"<area shape='rect' coords='100,350,400,700' href='$bottom' target='blank'>";
-					echo"<area shape='rect' coords='100,700,400,777' href='$shoes' target='blank'>";
 		}
 	}
 		?>

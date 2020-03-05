@@ -16,13 +16,12 @@
 			}
 			else
 			{
-				$email = $_SESSION['email'];
+				$emails = $_SESSION['email'];
 				$passwort = $_SESSION['passwort'];
-				echo "$email";
 				
 				$db = mysqli_connect('localhost','root','','bbs');
 				
-				$sql = "SELECT * FROM ffbenutzer WHERE email='heringlaura@web.de'";
+				$sql = "SELECT * FROM ffbenutzer WHERE email='$emails'";
 				$res = mysqli_query($db, $sql);
 				
 				while($datensatz = mysqli_fetch_assoc($res))
@@ -35,18 +34,10 @@
 					$pass = "$datensatz[pass]";
 					$profilbild = "$datensatz[profilbild]";
 				}
-				
-				echo "<div id='profilbild'>";
-					echo "<img src='profiles/$profilbild'>";
-				echo "</div>";
-				echo "<div id='benutzername'>";
-					echo "<h3>$benutzername</h3></br></br>";
-					echo "<h4>$vorname $nachname</h4>";
-				echo "</div>";
-				echo "<div id='bio'>";
-					echo "So stylt sich $email $vorname $nachname $id:</br>";
+				echo "$benutzername</br>";
+				echo "<img src='profiles/$profilbild'></br>";
+				echo "So stylt sich $vorname:</br>";
 					
-				echo "</div>";
 				
 				$ausgabe = "SELECT * FROM ffupload WHERE id=$id";
 				$ausres = mysqli_query($db, $ausgabe);
@@ -73,7 +64,8 @@
 						echo"<area shape='rect' coords='100,700,400,777' href='$schuhe' target='blank'>";
 					
 				}
-				
+				echo "<a href='explore.php'>Entdecke Trends</a>";
+				echo "<a ref='beitrag_erstellen.php'>Beitrag erstellen</a>";
 				echo "<a href='logout.php'>Logout</a>";
 			}
 		?>
