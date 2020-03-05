@@ -54,10 +54,10 @@
 					$unten = "$datensatz[unten]";
 					$schuhe = "$datensatz[schuhe]";
 					
-					echo "<img src='images/$image'></br>";
+					echo "<img usemap='#$image' src='images/$image' width='518' height='777'></br>";
 					echo "<p>$image_text</p>";
 					
-					echo"<map name='map'>";
+					echo"<map name='$image'>";
 						echo"<area shape='rect' coords='100,40,400,200' href='$kopf' target='blank'>";
 						echo"<area shape='rect' coords='100,200,400,350' href='$oben' target='blank'>";
 						echo"<area shape='rect' coords='100,350,400,700' href='$unten' target='blank'>";

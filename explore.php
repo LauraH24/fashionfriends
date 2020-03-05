@@ -43,12 +43,12 @@
 				  echo "<div id='img_div'>";
 					echo "<img src='profiles/$profilbild' width='50' height='50'>";
 					echo "<p>$benutzername</p>";
-					echo "<img usemap='#map' src='images/$image' width='518' height='777'>";
+					echo "<img usemap='#$image' src='images/$image' width='518' height='777'>";
 					echo "<p>$benutzername: $image_text</p>";
 				  echo "</div></br></br></br>";
 				 
 				  
-				echo"<map name='map'>
+				echo"<map name='$image'>
 					<area shape='rect' coords='100,40,400,200' href='$head' target='blank'>
 					<area shape='rect' coords='100,200,400,350' href='$top' target='blank'>
 					<area shape='rect' coords='100,350,400,700' href='$bottom' target='blank'>
