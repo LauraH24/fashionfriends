@@ -2,7 +2,7 @@
 	<head>
 		<title>FF - Beitrag erstellen</title>
 		<meta charset='utf-8'>
-		<link href='beitragerstellen.css' rel='stylesheet'>
+		<link href='beitragerstellen1.css' rel='stylesheet'>
 		<link rel="shortcut icon" type="image/x-icon" href="logo_neu.png">
 	</head>
 	<body>
