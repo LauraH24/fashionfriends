@@ -16,11 +16,7 @@
 			echo"<input type='file' name='image'>";
 			echo"</div>";
 			echo"<div>";
-			echo"<textarea
-				id='text' 
-				cols='40' 
-				rows='4' 
-				name='image_text' 
+			echo"<textarea id='text' name='image_text' 
 				placeholder='Bildbeschreibung hinzufügen'></textarea>";
 			echo "</br>";	
 			echo "<input type='text' name='head' placeholder='Kopf'>";
