@@ -13,10 +13,9 @@
 		<?php
 			if(!isset($_POST['senden']))
 			{
-				echo"<form action='' method='POST'>";
 					
 						echo "<input type='email' name='email' placeholder='Email'>";
-						echo "<input type='password' name='email' placeholder='Email'></br>";
+						echo "<input type='password' name='passwort' placeholder='Passwort'></br>";
 						echo"<input type='submit' name='senden' value='Login'/>";
 						echo"<input type='reset' name='Zurücksetzen'/></br>";
 				echo"</form>";
