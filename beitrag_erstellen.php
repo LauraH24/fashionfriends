@@ -26,8 +26,7 @@
 			echo"<input type='file' name='image'>";
 			echo"</div>";
 			echo"<div>";
-			echo"<input type='text' name='image_text' placeholder='Bildbeschreibung'>";
-			echo "</br>";	
+			echo"<input type='text' name='image_text' placeholder='Bildbeschreibung'>";	
 			echo "<input type='text' name='head' placeholder='Kopf'>";
 			echo "<input type='text' name='top' placeholder='Oberteil'>";
 			echo "<input type='text' name='bottom' placeholder='Unterteil'>";
