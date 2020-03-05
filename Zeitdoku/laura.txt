@@ -12,3 +12,5 @@
 -07.02.20: Arbeiten an Kategorie.php und Einfügen von Links in beitrag_erstellen.php. (90min)
 -12.02.20: Arbeiten an Einteilung der Areas und Bildupload. (90min)
 -26.02.20: Arbeiten an Bildupload und Sessions. (90min)
+-04.03.20: Arbeiten an diversen Dateien. (135min)
+-05.03.20: Fertigstellen der Dateien -> BackEnd. (300min)
