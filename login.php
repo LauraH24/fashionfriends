@@ -3,6 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<link href="login.css" rel="stylesheet">
+		<link rel="shortcut icon" type="image/x-icon" href="logo_neu.png">
 		<title>Login</title>
 	</head>
 	<body>
@@ -47,8 +48,8 @@
 				if($hash == $pass2)
 				{
 				echo "<h1>Vielen Dank für deine Anmeldung!</h1></br>";
-				echo "<a href='profile.php'>Weiter zu deinem Profil</a>";
-				echo "<a href='beitrag_erstellen.php'>Beitrag erstellen</a>";
+				echo "<a href='profile.php'>Weiter zu deinem Profil</a></br>";
+				echo "<a href='beitrag_erstellen.php'>Beitrag erstellen</a></br>";
 				}
 				else
 				{

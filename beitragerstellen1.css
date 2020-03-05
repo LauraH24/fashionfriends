@@ -15,10 +15,10 @@ body{
   text-align: center;
 }
 .box h1{
-  color: white;
+  color: #ff7979;
   text-transform: uppercase;
   font-weight: 500;
-  text-decoration-line: underline;
+
 
 }
 .box textarea[type = "Bildbeschreibung hinzufügen"]{
@@ -27,7 +27,7 @@ body{
   display: block;
   margin: 20px auto;
   text-align: center;
-  border: 2px solid #3498db;
+  border: 2px solid #ff7979;
   padding: 14px 10px;
   width: 200px;
   outline: none;
@@ -42,7 +42,7 @@ body{
   display: block;
   margin: 20px auto;
   text-align: center;
-  border: 2px solid #3498db;
+  border: 2px solid #ff7979;
   padding: 14px 10px;
   width: 200px;
   outline: none;
@@ -52,7 +52,7 @@ body{
 }
 .box input[type = "text"]:focus,.box textarea[type = "text"]:focus,.box input[type = "hidden"],.box button[type = "button"]:focus{
   width: 280px;
-  border-color: #2ecc71;
+  border-color: #ff7979;
 }
 .box button[type = "submit"]{
   border:0;
