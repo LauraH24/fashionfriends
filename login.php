@@ -8,25 +8,17 @@
 	<body>
 
 	<form class="box" action="" method="post">
-		<h1> Login</h1>
+		<h1> Login</h1></br>
 
 		<?php
 			if(!isset($_POST['senden']))
 			{
 				echo"<form action='' method='POST'>";
-					echo"<table>";
-					echo"<tr>";
-						echo"<td> E-Mail: </td>";
-						echo"<td> <input type='email' name='email'/> </td>";
-					echo"</tr>";
-					echo"<tr>";
-						echo"<td> Passwort: </td>";
-						echo"<td> <input type='password' name='passwort'/> </td>";
-					echo"</tr>";
-					echo"</table> </br>";
-			
-					echo"<input type='submit' name='senden' value='Login'/></br>";
-					echo"<input type='reset' name='Zurücksetzen'/></br></br></br>";
+					
+						echo "<input type='email' name='email' placeholder='Email'>";
+						echo "<input type='password' name='email' placeholder='Email'></br>";
+						echo"<input type='submit' name='senden' value='Login'/>";
+						echo"<input type='reset' name='Zurücksetzen'/></br>";
 				echo"</form>";
 			}
 			else{
