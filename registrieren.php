@@ -3,7 +3,7 @@
 	<head>
 		<title>Registrier dich!</title>
 		<meta charset='utf-8'>
-		<link href='registrieren.css' rel='stylesheet' >
+		<link href='registrieren2.css' rel='stylesheet' >
 		<link rel="shortcut icon" type="image/x-icon" href="logo_neu.png">
 	</head>
 	<body>
@@ -59,7 +59,7 @@
 				$image = $_FILES['image']['name'];
 				$target = "profiles/".basename($image);
 				
-								if (move_uploaded_file($_FILES['image']['tmp_name'], $target)) {
+				if (move_uploaded_file($_FILES['image']['tmp_name'], $target)) {
 					$msg = "Image uploaded successfully";
 				}else{
 					$msg = "Failed to upload image";
@@ -80,7 +80,7 @@
 
 			
 			mysqli_close($db);
-			echo "<img src='$target' height='50%' width='50%'></br></br></br>";
+			echo "<img src='$target'></br></br></br>";
 			echo "<h1>Willkommen bei FashionFriends, $vorname!</h1></br></br>";
 			echo "<a href='profile.php'>Trends entdecken</a>";
 

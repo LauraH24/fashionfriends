@@ -9,6 +9,16 @@
 		<form class="box" action="" method="post" enctype='multipart/form-data'>
 	<h1>Beitrag erstellen</h1>
 		<?php
+	session_start();
+	if(!isset($_SESSION['email']))
+	{
+		echo "<h1>Bitte logge dich erst ein!</h1></br>";
+		echo "<a href='login.php'>Login</a></br></br>";
+		echo "<h1>Noch nicht registriert? Melde dich jetzt an!</h1></br>";
+		echo "<a href='registrieren.php'>Registrieren</a>";
+	}
+	else
+	{
 		if(!isset($_POST['upload']))
 		{
 			echo"<input type='hidden' name='size' value='1000000'>";
@@ -16,12 +26,7 @@
 			echo"<input type='file' name='image'>";
 			echo"</div>";
 			echo"<div>";
-			echo"<textarea
-				id='text' 
-				cols='40' 
-				rows='4' 
-				name='image_text' 
-				placeholder='Bildbeschreibung hinzufügen'></textarea>";
+			echo"<input type='text' name='image_text' placeholder='Bildbeschreibung'>";
 			echo "</br>";	
 			echo "<input type='text' name='head' placeholder='Kopf'>";
 			echo "<input type='text' name='top' placeholder='Oberteil'>";
@@ -35,7 +40,6 @@
 		}
 		else
 		{	
-		session_start();
 				$db = mysqli_connect('localhost','root','','bbs');
 				
 				$head = $_POST['head'];
@@ -70,7 +74,7 @@
 			echo"<div id='content'>";
 				while ($row = mysqli_fetch_array($result)) {
 				  echo "<div id='img_div'>";
-					echo "<img usemap'#map' src='images/".$row['image']."' width='518' height='777'>";
+					echo "<img usemap='#map' src='images/".$row['image']."' width='518' height='777'>";
 					echo "<p>".$row['image_text']."</p>";
 				  echo "</div>";
 				}
@@ -81,6 +85,7 @@
 					echo"<area shape='rect' coords='100,350,400,700' href='$bottom' target='blank'>";
 					echo"<area shape='rect' coords='100,700,400,777' href='$shoes' target='blank'>";
 		}
+	}
 		?>
 	</form>
 	</body>
