@@ -3,7 +3,7 @@
 	<head>
 		<title>Registrier dich!</title>
 		<meta charset='utf-8'>
-		<link href='registrieren2.css' rel='stylesheet' >
+		<link href='registrieren.css' rel='stylesheet' >
 		<link rel="shortcut icon" type="image/x-icon" href="logo_neu.png">
 	</head>
 	<body>
