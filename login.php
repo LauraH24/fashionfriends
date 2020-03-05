@@ -17,7 +17,7 @@
 				echo"<form action='' method='POST'>";
 					
 						echo "<input type='email' name='email' placeholder='Email'>";
-						echo "<input type='password' name='password' placeholder='Passwort'></br>";
+						echo "<input type='password' name='passwort' placeholder='Passwort'></br>";
 						echo"<input type='submit' name='senden' value='Login'/>";
 						echo"<input type='reset' name='Zurücksetzen'/></br>";
 				echo"</form>";
@@ -50,7 +50,7 @@
 				{
 				echo "<h1>Vielen Dank für deine Anmeldung!</h1></br>";
 				echo "<a href='profile.php'>Weiter zu deinem Profil</a>";
-				echo "<a href='beitrag_erstellen.php'>Beitrag erstellen</a>";
+				echo "<a href='beitrag_erstellen.php'>Beitrag erstellen</a></br>";
 				}
 				else
 				{
