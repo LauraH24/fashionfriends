@@ -6,12 +6,11 @@
 		<link rel="shortcut icon" type="image/x-icon" href="logo_neu.png">
 	</head>
 	<body>
-		<form class="box" action="beitrag_erstellen.php" method="post">
+		<form class="box" action="beitrag_erstellen.php" method="post" enctype='multipart/form-data'>
 	<h1>Beitrag erstellen</h1>
 		<?php
 		if(!isset($_POST['upload']))
 		{
-		echo"<form  method='POST' action='beitrag_erstellen.php' enctype='multipart/form-data'>";
 			echo"<input type='hidden' name='size' value='1000000'>";
 			echo"<div>";
 			echo"<input type='file' name='image'>";
