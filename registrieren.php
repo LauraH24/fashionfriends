@@ -80,7 +80,7 @@
 
 			
 			mysqli_close($db);
-			echo "<img src='$target'></br></br></br>";
+			echo "<img src='$target' height='50%' width='50%'></br></br></br>";
 			echo "<h1>Willkommen bei FashionFriends, $vorname!</h1></br></br>";
 			echo "<a href='profile.php'>Trends entdecken</a>";
 
