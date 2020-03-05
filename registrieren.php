@@ -8,40 +8,20 @@
 	</head>
 	<body>
 		<form class="box" action="" method="post" enctype='multipart/form-data'>
+			<h1> Registrierung</h1></br>
 		<?php
 			if(!isset($_POST['senden']))
 			{
-				echo "<h1>Registrierung</h1>";
-				echo "<table>";
-				echo "<tr>";
-				echo "<td>Vorname:</td><td><input type='text' name='vorname'></br></td>";
-				echo "</tr>";
-				echo "<tr>";
-				echo "<td>Nachname:</td><td><input type='text' name='nachname'></br></td>";
-				echo "</tr>";
-				echo "<tr>";
-				echo "<td>Benutzername:</td><td><input type='text' name='benutzername'></br></td>";
-				echo "</tr>";
-				echo "<tr>";
-				echo "<td>E-Mail:</td><td><input type='email' name='email'></br></td>";
-				echo "</tr>";
-				echo "<tr>";
-				echo "<td>Passwort:</td><td><input type='password' name='pass'></br></td>";
-				echo "</tr>";
-				echo "<tr>";
-				echo "<td>Passwort wiederholen:</td><td><input type='password' name='passwied'></br></td>";
-				echo "</tr>";
-				echo "<tr>";
-				echo "<td>Profilbild:</td><td><input type='file' name='image'></td>";
-				echo "</tr>";
-				echo "<tr>";
-				echo "<td><input type='submit' name='senden' value='Senden'></td>";
-				echo "<td><input type='reset' name='loeschen' value='Löschen'></td>";
-				echo "</tr>";
+				echo "<input type='text' name='vorname' placeholder='Vorname'>";
+				echo "<input type='text' name='nachname' placeholder='Nachname'>";
+				echo "<input type='text' name='benutzername' placeholder='Benutzername'>";
+				echo "<input type='email' name='email' placeholder='Email'>";
+				echo "<input type='password' name='pass' placeholder='Passwort'>";
+				echo "<input type='password' name='passwied' placeholder='Passwort wiederholen'>";
+				echo "<input type='file' name='image' placeholder='Profilbild hinzufügen'></br>";
+				echo"<input type='submit' name='senden' value='Senden'/>";
+				echo"<input type='reset' name='loeschen' value='Löschen'/>";	
 				echo "</form>";
-				
-				echo "</tr>";
-				echo "</table>";
 				
 			}
 			else
