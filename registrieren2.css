@@ -6,19 +6,21 @@ body{
   background-image: url(asos.jpg);
 }
 .box{
-  width: 500px;
-  padding: 120px;
+  width: 400px;
+  padding: 50px;
   position: absolute;
-  top: 50%;
+  top: 30%;
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-40%,-20%);
   background: #191919;
   text-align: center;
+
 }
 .box h1{
   color: white;
   text-transform: uppercase;
   font-weight: 300;
+
 }
 .box input[type = "text"],.box input[type = "password"],.box input[type= "email"],.box input[type = "file"]{
   border:0;
@@ -27,7 +29,7 @@ body{
   margin: 20px auto;
   text-align: center;
   border: 2px solid #3498db;
-  padding: 14px 10px;
+  padding: 8px 10px;
   width: 200px;
   outline: none;
   color: white;

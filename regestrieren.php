@@ -3,7 +3,7 @@
 	<head>
 		<title>Registrier dich!</title>
 		<meta charset='utf-8'>
-		<link href='registrieren.css' rel='stylesheet' >
+		<link href='registrieren2.css' rel='stylesheet' >
 		<link rel="shortcut icon" type="image/x-icon" href="logo_neu.png">
 	</head>
 	<body>
@@ -11,7 +11,7 @@
 		<?php
 			if(!isset($_POST['senden']))
 			{
-				echo "<h1>Registrierung</h1>";
+				echo "<h1>Registrieren bei FashionFriends</h1>";
 				echo "<table>";
 				echo "<tr>";
 				echo "<td>Vorname:</td><td><input type='text' name='vorname'></br></td>";
