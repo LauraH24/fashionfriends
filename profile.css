@@ -1,3 +1,8 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 .topnav {
   overflow: hidden;
   background-color: #333;
@@ -20,11 +25,4 @@
 .topnav a.active {
   background-color: #ff7979;
   color: white;
-}
-h1{
-	color: #ff7979;
-  text-transform: uppercase;
-  font-weight: 300;
-  font-family: "montserrat",sans-serif;
-  
 }

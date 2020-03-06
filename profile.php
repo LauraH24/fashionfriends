@@ -1,10 +1,27 @@
-<html>
-	<head>
-		<meta charset='utf-8'>
-		<link href='' rel='stylesheet'>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+
+    <link rel="stylesheet" href="profile.css">
+    <link rel="shortcut icon" type="image/x-icon" href="logo_neu.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>FashionFriends</title>
 	</head>
 	<body>
+
+		<div class="topnav">
+	  	<a class="active" href="profile.php">Profil</a>
+ 		<a href="explore.php">Explore</a>
+ 		<a href="beitrag_erstellen.php">Beitrag teilen</a>
+ 		<a href="contact1.html">Impressum</a>
+  		<a href="FAQQ.html">FAQ</a>
+  		<a href="logout.php">Logout</a>
+		</div>
+
+		<div style="padding-left:20px">
+  		<p>Some content..</p>
+		</div>
 		<?php
 			session_start();
 			if(!isset($_SESSION['email']))
@@ -54,7 +71,7 @@
 					$unten = "$datensatz[unten]";
 					$schuhe = "$datensatz[schuhe]";
 					
-					echo "<img usemap='#$image' src='images/$image' width='518' height='777'></br>";
+					echo "<img usemap='#$image' src='images/$image' width='518' height='777' padding-left='10px'></br>";
 					echo "<p>$image_text</p>";
 					
 					echo"<map name='$image'>";

@@ -1,0 +1,32 @@
+body{
+  margin: 0;
+  padding: 0;
+ font-family: "montserrat",sans-serif;
+  color: white;
+  background-image: url(logo_neu.png);
+}
+.box{
+  width: 300px;
+  padding: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background: #191919;
+  text-align: center;
+}
+.box h1{
+  color: #ff7979;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-family: "montserrat",sans-serif;
+
+}
+
+.box h2{
+  color: #ff7979;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-family: "montserrat",sans-serif;
+
+}
