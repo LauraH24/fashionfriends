@@ -1,6 +1,7 @@
 .topnav {
   overflow: hidden;
   background-color: #333;
+  
 }
 
 .topnav a {
@@ -20,11 +21,35 @@
 .topnav a.active {
   background-color: #ff7979;
   color: white;
+
+}
+.rund{
+
+	border-radius: 200px;
+	-moz-border-radius: 200px;
+	-webkit-border-radius: 200px
 }
 h1{
 	color: #ff7979;
   text-transform: uppercase;
-  font-weight: 300;
+  font-weight: 600;
   font-family: "montserrat",sans-serif;
+  text-align: center;
   
+}
+table{
+	align-items: center;
+	width: 200px;
+  	padding: 50px;
+  	position: absolute;
+ 	top: 30%;
+  	left: 50%;
+  	transform: translate(-50%,0%);
+  	background: #191919;
+  	color: white;
+  	
+}
+
+td{
+	border-color: black;
 }

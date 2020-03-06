@@ -53,11 +53,11 @@
 				$shoes = "$datensatz[schuhe]";
 				
 				echo "<tr>";
-					echo "<td><img src='profiles/$profilbild' width='50' height='50'></td>";
+					echo "<td><img class='rund' src='profiles/$profilbild' width='50' height='50'></td>";
 					echo "<td><p>$benutzername</p></td>";
 				echo "</tr>";
 				echo "<tr>";
-					echo "<td colspan=2><img usemap='#$image' src='images/$image' width='518' height='777'></td>";
+					echo "<td colspan=2><img usemap='#$image' src='images/$image' width='518' height='777'></br></br></br></td>";
 				echo "</tr>";
 				echo "<tr>";
 					echo "<td><p>$benutzername: $image_text</p></br></br></br></td>";

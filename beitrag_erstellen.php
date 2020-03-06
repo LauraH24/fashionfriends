@@ -6,6 +6,7 @@
 		<link rel="shortcut icon" type="image/x-icon" href="logo_neu.png">
 	</head>
 	<body>
+		
 		<form class="box" action="" method="post" enctype='multipart/form-data'>
 	<h1>Beitrag erstellen</h1>
 		<?php
