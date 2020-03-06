@@ -18,10 +18,6 @@
   		<a href="FAQQ.html">FAQ</a>
   		<a href="logout.php">Logout</a>
 		</div>
-
-		<div style="padding-left:20px">
-  		<p>Some content..</p>
-		</div>
 		<?php
 			session_start();
 			if(!isset($_SESSION['email']))
@@ -51,14 +47,14 @@
 					$pass = "$datensatz[pass]";
 					$profilbild = "$datensatz[profilbild]";
 				}
-				echo "$benutzername</br>";
-				echo "<img src='profiles/$profilbild'></br>";
-				echo "So stylt sich $vorname:</br>";
+				echo "<h1>Styles von $benutzername</br></h1>";
+				echo "<h2>img src='profiles/$profilbild'><h2></br>";
+				
 					
 				
 				$ausgabe = "SELECT * FROM ffupload WHERE id=$id";
 				$ausres = mysqli_query($db, $ausgabe);
-				
+				echo "<table border=1>";
 				
 				while($datensatz = mysqli_fetch_assoc($ausres))
 				{
@@ -71,8 +67,19 @@
 					$unten = "$datensatz[unten]";
 					$schuhe = "$datensatz[schuhe]";
 					
-					echo "<img usemap='#$image' src='images/$image' width='518' height='777' padding-left='10px'></br>";
-					echo "<p>$image_text</p>";
+
+				
+				echo "<tr>";
+					echo "<td colspan=2><img usemap='#$image' src='images/$image' width='518' height='777'></td>";
+					echo "</tr>";
+					echo "<tr>";
+					echo "<td><p>$image_text</p></br></td>";
+				echo "</tr>";
+				
+
+
+
+
 					
 					echo"<map name='$image'>";
 						echo"<area shape='rect' coords='100,40,400,200' href='$kopf' target='blank'>";
@@ -81,9 +88,8 @@
 						echo"<area shape='rect' coords='100,700,400,777' href='$schuhe' target='blank'>";
 					
 				}
-				echo "<a href='explore.php'>Entdecke Trends</a>";
-				echo "<a ref='beitrag_erstellen.php'>Beitrag erstellen</a>";
-				echo "<a href='logout.php'>Logout</a>";
+				echo "</table>";
+				mysqli_close($db);
 			}
 		?>
 	</body>

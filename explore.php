@@ -57,7 +57,7 @@
 					echo "<td><p>$benutzername</p></td>";
 				echo "</tr>";
 				echo "<tr>";
-					echo "<td colspan=2><img usemap='#$image' src='images/$image' width='518' height='777'></br></br></br></td>";
+					echo "<td colspan=2><img usemap='#$image' src='images/$image' width='518' height='777'></br></br></td>";
 				echo "</tr>";
 				echo "<tr>";
 					echo "<td><p>$benutzername: $image_text</p></br></br></br></td>";

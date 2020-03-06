@@ -26,3 +26,37 @@ body {
   background-color: #ff7979;
   color: white;
 }
+h1{
+  color: #ff7979;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-family: "montserrat",sans-serif;
+  text-align: center;
+  
+}
+h2{
+  color: #ff7979;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-family: "montserrat",sans-serif;
+  text-align: center;
+  
+}
+.rund{
+
+  border-radius: 200px;
+  -moz-border-radius: 200px;
+  -webkit-border-radius: 200px
+}
+table{
+  align-items: center;
+  width: 200px;
+    padding: 50px;
+    position: absolute;
+  top: 30%;
+    left: 50%;
+    transform: translate(-50%,0%);
+    background: #191919;
+    color: white;
+    
+}
