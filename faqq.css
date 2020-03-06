@@ -6,13 +6,12 @@ body{
   background-image: url(logo_neu.png);
 }
 .box{
-  width: 500px;
-  padding: 60px;
+  width: 400px;
+  padding: 50px;
   position: absolute;
   top: 30%;
   left: 50%;
-  bottom: 20%;
-  transform: translate(-50%,-50%);
+  transform: translate(-45%,-20%);
   background: #191919;
   text-align: center;
 }
@@ -27,5 +26,5 @@ body{
 .box h2{
   color: #ff7979;
   text-transform: uppercase;
-  font-weight: 200;
+  font-weight: 400;
   font-family: "montserrat",sans-serif;
