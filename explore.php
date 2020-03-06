@@ -37,7 +37,7 @@
 			$sql="SELECT * FROM ffupload, ffbenutzer WHERE ffupload.id=ffbenutzer.id";
 
 			$res = mysqli_query ($db, $sql);
-			echo "<table border=1>";
+			echo "<table>";
 			
 
 			echo"<div id='content'>";

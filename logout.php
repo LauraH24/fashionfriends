@@ -14,7 +14,7 @@
 			session_start();
 			session_destroy();
 			echo "Logout erfolgreich.</br></br></br>";
-			echo"<input type='submit' name='senden' href='login.php' value='Login'/>";
+			echo"<a href='login.php'>Login</a>";
 		?>
 	</body>
 </html>

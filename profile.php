@@ -47,14 +47,16 @@
 					$pass = "$datensatz[pass]";
 					$profilbild = "$datensatz[profilbild]";
 				}
-				echo "<h1>Styles von $benutzername</br></h1>";
-				echo "<h2>img src='profiles/$profilbild'><h2></br>";
 				
+				echo "<h1>Styles von $benutzername</br></h1>";
+
+
 					
 				
 				$ausgabe = "SELECT * FROM ffupload WHERE id=$id";
 				$ausres = mysqli_query($db, $ausgabe);
-				echo "<table border=1>";
+				
+				echo "<table>";
 				
 				while($datensatz = mysqli_fetch_assoc($ausres))
 				{
